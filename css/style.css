@@ -1,0 +1,99 @@
+@charset "utf-8";
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  font-size: 1.0rem;
+  color: #fff;
+  font-family: 'Roboto',sans-serif;
+  letter-spacing: inherit;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+a {
+  color: #000;
+  text-decoration: none;
+}
+
+img {
+  width: 100%; 
+  height: auto
+}
+
+/*基本文字色を変更*/
+
+/*-------------------------------------------------------------------------------------------------
+
+共通部分
+
+--------------------------------------------------------------------------------------------------*/
+
+
+
+
+
+
+
+/*-------------------------------------------------------------------------------------------------
+
+header
+
+--------------------------------------------------------------------------------------------------*/
+
+/*-------------------------------------------------------------------------------------------------
+
+view-first
+
+--------------------------------------------------------------------------------------------------*/
+
+.p-grid__view-first {
+  position: relative;
+  height: 100vh;
+  width: 100%;
+}
+
+.p-grid__view-first video {
+  object-fit: cover;
+  height: 100%;
+  width: 100%;
+}
+
+.p-grid__view-first div {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -25%);
+  width: 300px;
+  text-align: center;
+  margin: 0 auto;
+}
+
+.p-grid__view-first div h2 {
+  color: #fff;
+  font-size: 3.052rem;
+  margin-bottom: 1rem;
+}
+.p-grid__view-first div p {
+  color: #fff;
+  font-weight: 700;
+  text-transform: uppercase;
+}
+.p-grid__view-first div a {
+  margin-top: 3rem;
+}
+
+/* -------------------------------------------- */
+/* ▼タブレット用デザイン */
+/* -------------------------------------------- */
+@media screen and (min-width: 768px) {
+
+}
+/* ------------------------------------ */
+/* ▼PC用デザイン用デザイン */
+/* ------------------------------------ */
+@media screen and (min-width: 1024px) {
+
+}
