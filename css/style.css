@@ -6,7 +6,7 @@ html {
 
 body {
   font-size: 1.0rem;
-  color: #fff;
+  color: #000;
   font-family: 'Roboto',sans-serif;
   letter-spacing: inherit;
   -webkit-font-smoothing: antialiased;
@@ -19,7 +19,7 @@ a {
 }
 
 img {
-  width: 100%; 
+  /* width: 100%;  */
   height: auto
 }
 
@@ -76,11 +76,13 @@ view-first
   font-size: 3.052rem;
   margin-bottom: 1rem;
 }
+
 .p-grid__view-first div p {
   color: #fff;
   font-weight: 700;
   text-transform: uppercase;
 }
+
 .p-grid__view-first div a {
   margin-top: 3rem;
 }
