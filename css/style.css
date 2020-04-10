@@ -5,7 +5,7 @@ html {
 
 body {
   font-size: 1.0rem;
-  color: #000;
+  color: #242424;
   font-family: 'Roboto',sans-serif;
   letter-spacing: inherit;
   -webkit-font-smoothing: antialiased;
@@ -13,7 +13,7 @@ body {
 }
 
 a {
-  color: #000;
+  color: #242424;
   text-decoration: none;
 }
 
@@ -38,14 +38,23 @@ header
 view-first
 
 --------------------------------------------------------------------------------------------------*/
-.test {
-  font-size: 6rem;
-  color: #fff;
-}
-
 .p-grid__view-first {
   position: relative;
   height: 100vh;
+  width: 100%;
+}
+
+.p-grid__view-first::before {
+  background-color: rgba(0, 0, 0, 0.4);
+  background-image: radial-gradient(#000 20%, transparent 0), radial-gradient(#000 20%, transparent 0);
+  background-position: 0 0, 10px 10px;
+  background-size: 4px 4px;
+  content: "";
+  display: block;
+  height: 100%;
+  position: absolute;
+  left: 0;
+  top: 0;
   width: 100%;
 }
 
@@ -56,61 +65,90 @@ view-first
   width: 100%;
 }
 
-.p-grid__view-first div {
+.p-grid__view-first .view-first-contents {
   position: absolute;
   top: 50%;
   left: 50%;
   -webkit-transform: translate(-50%, -25%);
           transform: translate(-50%, -25%);
-  width: 300px;
+  width: 95%;
   text-align: center;
   margin: 0 auto;
 }
 
-.p-grid__view-first div h2 {
+.p-grid__view-first .view-first-contents h2 {
   color: #fff;
-  font-size: 3.2rem;
+  text-shadow: 0 0 8px rgba(255, 255, 255, 0.8);
+  font-size: 2.2rem;
   margin-bottom: 1rem;
   font-family: copperplate, serif;
   font-weight: 700;
   font-style: normal;
 }
 
-.p-grid__view-first div p {
+.p-grid__view-first .view-first-contents h2 span {
+  font-size: 4rem;
+}
+
+.p-grid__view-first .view-first-contents p {
+  font-size: 1.4rem;
   color: #fff;
   font-weight: 700;
   text-transform: uppercase;
 }
 
-.p-grid__view-first div a {
-  margin-top: 3rem;
+.p-grid__view-first .view-first-contents a {
+  margin-top: 2.4rem;
 }
 
 .p-btn-round {
-  background: #FFB549;
-  border: 1px solid #fff;
+  opacity: 0.8;
   border-radius: 50px;
+  -webkit-border-radius: 50px;
+  -moz-border-radius: 50px;
   -webkit-box-shadow: 0 2px 2px rgba(0, 0, 0, 0.25);
           box-shadow: 0 2px 2px rgba(0, 0, 0, 0.25);
-  color: #fff;
   display: block;
-  font-size: 1.1rem;
+  font-size: 2.4rem;
   font-weight: 400;
-  height: 3rem;
   margin: 0 auto .25rem auto;
-  line-height: 3rem;
+  line-height: 4rem;
   text-align: center;
   -webkit-transition: all .5s;
   transition: all .5s;
-  width: 16rem;
-  font-weight: bold;
+  width: 20rem;
+  height: 4rem;
+  position: relative;
 }
 
-.p-btn-round:hover {
+.btn-about {
+  background: #4072B3;
+  border: 1px solid #fff;
+  color: #fff;
+}
+
+.btn-about:hover {
+  color: #4072B3;
+  background-color: #fff;
+  border: 2px solid #4072B3;
   -webkit-box-shadow: 0 4px 4px rgba(0, 0, 0, 0.25);
           box-shadow: 0 4px 4px rgba(0, 0, 0, 0.25);
   top: -2px;
-  color: red;
+}
+
+.btn-works {
+  background: #EB8686;
+  border: 1px solid #fff;
+  color: #fff;
+}
+
+.btn-works:hover {
+  color: #EB8686;
+  background-color: #fff;
+  border: 2px solid #EB8686;
+  -webkit-box-shadow: 0 4px 4px rgba(0, 0, 0, 0.25);
+          box-shadow: 0 4px 4px rgba(0, 0, 0, 0.25);
+  top: -2px;
 }
 
 /* -------------------------------------------- */
