@@ -38,6 +38,11 @@ header
 view-first
 
 --------------------------------------------------------------------------------------------------*/
+.test {
+  font-size: 6rem;
+  color: #fff;
+}
+
 .p-grid__view-first {
   position: relative;
   height: 100vh;
@@ -98,6 +103,7 @@ view-first
   -webkit-transition: all .5s;
   transition: all .5s;
   width: 16rem;
+  font-weight: bold;
 }
 
 .p-btn-round:hover {
