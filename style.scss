@@ -19,7 +19,7 @@ a {
 }
 
 img {
-  /* width: 100%;  */
+  width: 100%;
   height: auto
 }
 
@@ -80,12 +80,35 @@ view-first
       text-transform: uppercase;
     }
     a {
-      display: inline-block;
       margin-top: 3rem;
     }
   }
 }
 
+.p-btn-round {
+  background: #FFB549;
+  border: 1px solid #fff;
+  -webkit-border-radius: 50px;
+  -moz-border-radius: 50px;
+  border-radius: 50px;
+  box-shadow: 0 2px 2px rgba(0, 0, 0, 0.25);
+  color: #fff;
+  display: block;
+  font-size: 1.1rem;
+  font-weight: 400;
+  height: 3rem;
+  margin: 0 auto .25rem auto;
+  line-height: 3rem;
+  text-align: center;
+  -webkit-transition: all .5s;
+  transition: all .5s;
+  width: 16rem;
+  &:hover {
+    box-shadow: 0 4px 4px rgba(0, 0, 0, 0.25);
+    top: -2px;
+    color: red;
+  }
+}
 
 
 
