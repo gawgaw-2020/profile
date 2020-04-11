@@ -7,7 +7,7 @@ html {
 body {
   font-size: 1.0rem;
   color: #242424;
-  font-family: 'Roboto',sans-serif;
+  font-family: 'Roboto','Noto Sans JP',sans-serif;
   letter-spacing: inherit;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
@@ -124,28 +124,80 @@ header
       position: fixed;
       top: 0;
       right: 0;
-      background-color: rgba(174, 196, 229, 0.95);
-      width: 85%;
+      background-color: rgba(192, 192, 192, 0.9);
+      width: 90%;
       height: 100vh;
-      text-align: center;
-      font-size: 2.4rem;
+      font-size: 2.2rem;
       transition: all 0.4s ease-out;
-      text-shadow: 0 0 8px rgba(255,255,255,.8);
-      .l-product-logo-sp {
+      .balloon {
+        width: 100%;
+        display: flex;
         padding: 2.4rem 0;
-        width: 30%;
+        .faceicon {
+          width: 20%;
+          position: relative;
+          h1 {
+            width: 80%;
+            position: absolute;
+            top: 50%;
+            left: 65%;
+            transform: translateY(-50%) translateX(-50%);
+          }
+        }
+        .chatting {
+          width: 85%;
+          padding: 1.6rem 1.6rem;
+          .says {
+            border-radius: 1.2rem;
+            background: rgba(235, 134, 134, 0.9);
+            position: relative;
+            &:after {
+              content: "";
+              display: inline-block;
+              position: absolute;
+              top: 50%; 
+              left: -22px;
+              border: 12px solid transparent;
+              border-right: 12px solid rgba(235, 134, 134, 0.9);
+            }
+            p {
+              font-size: 1.4rem;
+              padding: 1rem 1.6rem;
+              line-height: 1.4;
+            }
+          }
+        }
       }
       ul {
-        padding: 1.6rem 0;
+        padding: 0 2.4rem;
         li {
           margin-bottom: 2.4rem;
+          text-shadow: 0 0 8px rgba(255,255,255,.8);
+          text-transform: uppercase;
+          i {
+            display: inline-block;
+            margin-right: 1rem;
+          }
+          img {
+            width: 3rem;
+            display: inline-block;
+            vertical-align: -20%;
+            margin: 0 7px 0 -6px;
+          }
+          span {
+            margin-left: 1rem;
+            font-size: 1.4rem;
+          }
         }
       }
     }
     .clicked.l-header__nav-top {
-      transform: translate(0);    }
+      transform: translate(0);
+    }
   }
 }
+
+
 
 /*-------------------------------------------------------------------------------------------------
 

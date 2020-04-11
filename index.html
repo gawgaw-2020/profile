@@ -22,8 +22,10 @@
   <!-- <link rel="manifest" href="/site.webmanifest">
   <meta name="msapplication-TileColor" content="#da532c">
   <meta name="theme-color" content="#ffffff"> -->
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css">
   <!-- 以下Webフォント -->
   <link rel="stylesheet" href="https://use.typekit.net/gvt0ghb.css">
+  <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP&display=swap" rel="stylesheet">
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
 </head>
 <body>
@@ -41,21 +43,34 @@
         <span></span>
       </div>
       <nav id="menu" class="l-header__nav-top">
-        <h1 class="l-product-logo-sp">
-          <a href="/" target="_self">
-            <img alt="オガワタクヤのロゴ" src="img/takuya.png" />
-          </a>
-        </h1>
+        <div class="balloon">
+          <div class="faceicon">
+            <h1  class="l-product-logo-sp">
+              <a href="/" target="_self">
+                <img alt="オガワタクヤのロゴ" src="img/takuya.png" />
+              </a>
+            </h1>
+          </div>
+          <div class="chatting">
+            <div class="says">
+              <p>Hello World!!
+                <br>
+                新型コロナ対策のため、不要不急の外出及び「三つの密」を避けましょう！
+                <br>
+                感染防止のためには、できる限り頻繁に石けんを使って手洗い！
+              </p>
+            </div>
+          </div>
+        </div>
         <ul class="">
-          <li><a href="#" target="_self">About</a></li>
-          <li><a href="#" target="_self">Works</a></li>
-          <li><a href="#" target="_self">Blog</a></li>
-          <li><a href="#" target="_self">Contact</a></li>
-          <li><a href="#" target="_self">Twitter</a></li>
-          <li><a href="#" target="_self">Wantedly</a></li>
+          <li><a href="#" target="_self"><i class="fas fa-user-circle"></i>About<span>-自己紹介-</span></a></li>
+          <li><a href="#" target="_self"><i class="fas fa-laptop-code"></i>Works<span>-製作実績-</span></a></li>
+          <li><a href="#" target="_self"><i class="fas fa-book-open"></i>Blog<span>-技術ブログ-</span></a></li>
+          <li><a href="#" target="_self"><i class="fas fa-envelope-open-text"></i>Contact<span>-お問い合わせ-</span></a></li>
+          <li><a href="#" target="_self"><i class="fab fa-twitter"></i>Twitter<span>-日々発信中-</span></a></li>
+          <li><a href="#" target="_self"><img src="img/wantedly_mark.png" alt="">Wantedly<span>-転職活動中-</span></a></li>
         </ul>
       </nav>
-      <div class="black-bg" id="js-black-bg"></div>
     </div>
   </header>
   <main>
