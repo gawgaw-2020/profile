@@ -23,6 +23,10 @@ img {
   height: auto
 }
 
+.pc-only {
+  display: none;
+}
+
 /*基本文字色を変更*/
 
 /*-------------------------------------------------------------------------------------------------
@@ -31,10 +35,39 @@ img {
 
 --------------------------------------------------------------------------------------------------*/
 
+@mixin btnStyle() {
+  opacity: 0.9;
+  border-radius: 50px;
+  -webkit-border-radius: 50px;
+  -moz-border-radius: 50px;
+  box-shadow: 0 2px 2px rgba(0, 0, 0, 0.25);
+  display: block;
+  font-size: 2.4rem;
+  font-weight: 400;
+  margin: 0 auto .25rem auto;
+  line-height: 4rem;
+  text-align: center;
+  -webkit-transition: all .5s;
+  transition: all .5s;
+  width: 20rem;
+  height: 4rem;
+  position: relative;
+}
 
+@mixin btnColor($btnBgColor:#4072B3, $borderColor:#fff, $btnColor:#fff) {
+  background: $btnBgColor;
+  border: 1px solid $borderColor;
+  color: $btnColor;
+}
 
-
-
+@mixin btnHover($hoverColor:#4072B3, $hoverBgColor:#fff, $hoverBoderColor:#4072B3) {
+  opacity: 0.8;
+  color: $hoverColor;
+  background-color: $hoverBgColor;
+  border: 2px solid $hoverBoderColor;
+  box-shadow: 0 4px 4px rgba(0, 0, 0, 0.25);
+  top: -2px;
+}
 
 
 /*-------------------------------------------------------------------------------------------------
@@ -43,12 +76,82 @@ header
 
 --------------------------------------------------------------------------------------------------*/
 
+.l-header {
+  .l-header-inner {
+    z-index: 9999;
+    position: relative;
+    //ここからハンバーガーメニュー
+    .ham {
+      z-index: 10000;
+      position: fixed;
+      width: 30px;
+      height: 30px;
+      cursor: pointer;
+      top: 1.6rem;
+      right: 5%;
+      span {
+        position: absolute;
+        left: 5px;
+        width: 20px;
+        height: 2px;
+        background-color: #fff;
+        transition: all 0.3s;
+        &:first-child {
+          top: 5px;
+        }
+        &:nth-child(2) {
+          top: 14px;
+        }
+        &:last-child {
+          bottom: 5px;
+        }
+      }
+    }
+    .clicked span:first-child {
+      transform: rotate(45deg);
+      top: 10px;
+    }
+    .clicked span:nth-child(2) {
+      width: 0px;
+    } 
+    .clicked span:last-child {
+      transform: rotate(-45deg);
+      top: 10px;
+    }
+    //ここまでハンバーガーメニュー
+    nav.l-header__nav-top {
+      transform: translate(100%);
+      position: fixed;
+      top: 0;
+      right: 0;
+      background-color: rgba(174, 196, 229, 0.95);
+      width: 85%;
+      height: 100vh;
+      text-align: center;
+      font-size: 2.4rem;
+      transition: all 0.4s ease-out;
+      text-shadow: 0 0 8px rgba(255,255,255,.8);
+      .l-product-logo-sp {
+        padding: 2.4rem 0;
+        width: 30%;
+      }
+      ul {
+        padding: 1.6rem 0;
+        li {
+          margin-bottom: 2.4rem;
+        }
+      }
+    }
+    .clicked.l-header__nav-top {
+      transform: translate(0);    }
+  }
+}
+
 /*-------------------------------------------------------------------------------------------------
 
 view-first
 
 --------------------------------------------------------------------------------------------------*/
-
 
 .p-grid__view-first {
   position: relative;
@@ -81,9 +184,10 @@ view-first
     text-align: center;
     margin: 0 auto;
     h2 {
+      text-transform: uppercase;
       color: #fff;
       text-shadow: 0 0 8px rgba(255,255,255,.8);
-      font-size: 2.2rem;
+      font-size: 2.8rem;
       margin-bottom: 1rem;
       font-family: copperplate, serif;
       font-weight: 700;
@@ -98,47 +202,14 @@ view-first
       font-weight: 700;
       text-transform: uppercase;
     }
-      a {
-        margin-top: 2.4rem;
-      }
+    a {
+      margin-top: 2.4rem;
+    }
   }
-}
-
-@mixin btnStyle() {
-  opacity: 0.8;
-  border-radius: 50px;
-  -webkit-border-radius: 50px;
-  -moz-border-radius: 50px;
-  box-shadow: 0 2px 2px rgba(0, 0, 0, 0.25);
-  display: block;
-  font-size: 2.4rem;
-  font-weight: 400;
-  margin: 0 auto .25rem auto;
-  line-height: 4rem;
-  text-align: center;
-  -webkit-transition: all .5s;
-  transition: all .5s;
-  width: 20rem;
-  height: 4rem;
-  position: relative;
 }
 
 .p-btn-round {
   @include btnStyle();
-}
-
-@mixin btnColor($btnBgColor:#4072B3, $borderColor:#fff, $btnColor:#fff) {
-  background: $btnBgColor;
-  border: 1px solid $borderColor;
-  color: $btnColor;
-}
-
-@mixin btnHover($hoverColor:#4072B3, $hoverBgColor:#fff, $hoverBoderColor:#4072B3) {
-  color: $hoverColor;
-  background-color: $hoverBgColor;
-  border: 2px solid $hoverBoderColor;
-  box-shadow: 0 4px 4px rgba(0, 0, 0, 0.25);
-  top: -2px;
 }
 
 .btn-about {
