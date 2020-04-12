@@ -26,6 +26,10 @@ img {
   display: none;
 }
 
+.tab-only {
+  display: none;
+}
+
 /*基本文字色を変更*/
 /*-------------------------------------------------------------------------------------------------
 
@@ -332,7 +336,7 @@ footer
 --------------------------------------------------------------------------------------------------*/
 footer {
   padding: 4rem 0;
-  background-color: #4072B3;
+  background-color: rgba(64, 114, 179, 0.9);
   color: #fff;
   font-size: 1.6rem;
 }
@@ -407,13 +411,14 @@ footer .main-inner .copyright {
 /* ▼タブレット用デザイン */
 /* -------------------------------------------- */
 @media screen and (min-width: 768px) {
-  .pc-only {
+  .tab-only {
     display: block;
   }
   /* -------------------------------------------- */
   /* 768px〜 ヘッダー用デザイン */
   /* -------------------------------------------- */
   .l-header {
+    border: 1px solid #ddd;
     background-color: rgba(255, 255, 255, 0.9);
     width: 100%;
     height: 60px;
@@ -431,8 +436,8 @@ footer .main-inner .copyright {
         -ms-flex-pack: justify;
             justify-content: space-between;
   }
-  .l-header .l-header-inner .l-product-logo-pc {
-    width: 44px;
+  .l-header .l-header-inner .l-product-logo-pc .face-logo {
+    width: 43px;
   }
   .l-header .l-header-inner .ham {
     display: none;
@@ -494,6 +499,13 @@ footer .main-inner .copyright {
     right: -47px;
     -webkit-transform: rotate(25deg);
             transform: rotate(25deg);
+    -webkit-transition: all 0.2s;
+    transition: all 0.2s;
+  }
+  .p-grid__view-first .view-first-contents h2 p:hover {
+    font-size: 1.6rem;
+    top: -8px;
+    right: -57px;
   }
   /* -------------------------------------------- */
   /* 768px〜 フッター用デザイン */
@@ -506,6 +518,15 @@ footer .main-inner .copyright {
         -ms-flex-pack: end;
             justify-content: flex-end;
   }
+  footer .main-inner ul.footer-list li.footer-contents {
+    width: 30%;
+    margin-left: 20px;
+  }
+  footer .main-inner ul.footer-list li.footer-contents label p {
+    font-size: 2.4rem;
+    margin-bottom: 0.8rem;
+    cursor: auto;
+  }
   footer .main-inner ul.footer-list li.footer-contents label p::after {
     display: none;
   }
@@ -514,12 +535,17 @@ footer .main-inner .copyright {
     padding: 0.5rem;
     opacity: 1;
   }
-  footer .main-inner ul.footer-list li.footer-contents ul.content-list li a {
+  footer .main-inner ul.footer-list li.footer-contents ul.content-list a {
     display: inline-block;
     color: #fff;
     width: 100%;
+    -webkit-transition: all 0.2s;
+    transition: all 0.2s;
   }
-  footer .main-inner .copyright {
+  footer .main-inner ul.footer-list li.footer-contents ul.content-list a:hover {
+    color: #EB8686;
+  }
+  footer .copyright {
     text-align: center;
     border-top: 1px solid #fff;
     padding-top: 1rem;
@@ -529,4 +555,44 @@ footer .main-inner .copyright {
 /* ------------------------------------ */
 /* ▼PC用デザイン */
 /* ------------------------------------ */
+@media screen and (min-width: 1024px) {
+  .pc-only {
+    display: block;
+  }
+  .l-header .l-header-inner .l-product-logo-pc a {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  }
+  .l-header .l-header-inner .l-product-logo-pc a .logo {
+    width: 200px;
+    padding: 20px 20px 0;
+  }
+  footer .main-inner {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  }
+  footer .main-inner div.footer-items {
+    width: 40%;
+  }
+  footer .main-inner div.footer-items .footer-icon {
+    width: 25%;
+    padding: 0 0 1.6rem;
+    margin: 0 auto;
+  }
+  footer .main-inner div.footer-items .footer-logo {
+    width: 60%;
+    margin: 0 auto 2.4rem;
+  }
+  footer .main-inner ul.footer-list {
+    width: 60%;
+  }
+  footer .main-inner ul.footer-list li.footer-contents {
+    width: 33%;
+  }
+  footer .main-inner ul.footer-list li.footer-contents ul.content-list {
+    font-size: 1.5rem;
+  }
+}
 /*# sourceMappingURL=style.css.map */
