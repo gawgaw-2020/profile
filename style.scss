@@ -128,11 +128,12 @@ header
       width: 90%;
       height: 100vh;
       font-size: 2.2rem;
-      transition: all 0.4s ease-out;
+      transition: all 0.4s cubic-bezier(.08,.5,.24,.95);
       .balloon {
         width: 100%;
         display: flex;
-        padding: 2.4rem 0;
+        padding: 4rem 0 0;
+        margin-bottom: 3.2rem;
         .faceicon {
           width: 20%;
           position: relative;
@@ -149,16 +150,16 @@ header
           padding: 1.6rem 1.6rem;
           .says {
             border-radius: 1.2rem;
-            background: rgba(235, 134, 134, 0.9);
+            background: rgba(235, 134, 134, 0.7);
             position: relative;
             &:after {
               content: "";
               display: inline-block;
               position: absolute;
               top: 50%; 
-              left: -22px;
+              left: -24px;
               border: 12px solid transparent;
-              border-right: 12px solid rgba(235, 134, 134, 0.9);
+              border-right: 12px solid rgba(235, 134, 134, 0.7);
             }
             p {
               font-size: 1.4rem;
@@ -174,19 +175,24 @@ header
           margin-bottom: 2.4rem;
           text-shadow: 0 0 8px rgba(255,255,255,.8);
           text-transform: uppercase;
+          font-size: 1.6rem;
           i {
             display: inline-block;
             margin-right: 1rem;
+            text-shadow: none;
+          }
+          .fa-twitter {
+            color: #1DA1F2;
           }
           img {
-            width: 3rem;
+            width: 2.5rem;
             display: inline-block;
             vertical-align: -20%;
-            margin: 0 7px 0 -6px;
+            margin: 0 4px 0 -6px;
           }
           span {
             margin-left: 1rem;
-            font-size: 1.4rem;
+            font-size: 1.2rem;
           }
         }
       }
@@ -196,8 +202,6 @@ header
     }
   }
 }
-
-
 
 /*-------------------------------------------------------------------------------------------------
 
@@ -279,15 +283,89 @@ view-first
 }
 
 
+/*-------------------------------------------------------------------------------------------------
 
+footer
 
+--------------------------------------------------------------------------------------------------*/
+
+footer {
+  height: 600px;
+  background-color: #4072B3;
+  color: #fff;
+}
 
 
 /* -------------------------------------------- */
 /* ▼タブレット用デザイン */
 /* -------------------------------------------- */
-@media screen and (min-width: 768px) {
 
+@media screen and (min-width: 768px) {
+  .pc-only {
+    display: block;
+  }
+  
+  .l-header {
+    background-color: #fff;
+    width: 100%;
+    height: 60px;
+    position: fixed;
+    z-index: 22222;
+    .l-header-inner {
+      width: 95%;
+      max-width: 1440px;
+      margin: 0 auto;
+      display: flex;
+      justify-content: space-between;
+      .l-product-logo-pc {
+        width: 44px;
+      }
+      .ham {
+        display: none;
+      }
+      nav.l-header__nav-top {
+        height: 60px;
+        transform: translate(0);
+        background-color: transparent;
+        font-size: 1.6rem;
+        position: static;
+        .balloon {
+          display: none;
+        }
+        .gb-menu {
+          width: auto;
+          display: flex;
+          padding: 0;
+          justify-content: flex-end;
+          position: static;
+          li {
+            height: 60px;
+            transition: .3s;
+            &:hover {
+              text-shadow: 0 2px 2px #bbb;
+              background-color: rgba(192, 192, 192, 0.3);
+              box-shadow: 0 15px 30px -5px rgba(0,0,0,.15), 0 0 5px rgba(0,0,0,.1);
+            }
+            a {
+              display: inline-block;
+              line-height: 60px;
+              padding: 0 10px 0 ;
+              i {
+                margin-right: 0.5rem;
+              }
+              span {
+                display: none;
+              }
+            }
+            img {
+              width: 2.5rem;
+              margin: 0px 0 5px 0 ;
+            }
+          }
+        }
+      }
+    }
+  }
 }
 /* ------------------------------------ */
 /* ▼PC用デザイン用デザイン */

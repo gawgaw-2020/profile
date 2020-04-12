@@ -100,8 +100,8 @@ header
   width: 90%;
   height: 100vh;
   font-size: 2.2rem;
-  -webkit-transition: all 0.4s ease-out;
-  transition: all 0.4s ease-out;
+  -webkit-transition: all 0.4s cubic-bezier(0.08, 0.5, 0.24, 0.95);
+  transition: all 0.4s cubic-bezier(0.08, 0.5, 0.24, 0.95);
 }
 
 .l-header .l-header-inner nav.l-header__nav-top .balloon {
@@ -109,7 +109,8 @@ header
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  padding: 2.4rem 0;
+  padding: 4rem 0 0;
+  margin-bottom: 3.2rem;
 }
 
 .l-header .l-header-inner nav.l-header__nav-top .balloon .faceicon {
@@ -133,7 +134,7 @@ header
 
 .l-header .l-header-inner nav.l-header__nav-top .balloon .chatting .says {
   border-radius: 1.2rem;
-  background: rgba(235, 134, 134, 0.9);
+  background: rgba(235, 134, 134, 0.7);
   position: relative;
 }
 
@@ -142,9 +143,9 @@ header
   display: inline-block;
   position: absolute;
   top: 50%;
-  left: -22px;
+  left: -24px;
   border: 12px solid transparent;
-  border-right: 12px solid rgba(235, 134, 134, 0.9);
+  border-right: 12px solid rgba(235, 134, 134, 0.7);
 }
 
 .l-header .l-header-inner nav.l-header__nav-top .balloon .chatting .says p {
@@ -161,23 +162,29 @@ header
   margin-bottom: 2.4rem;
   text-shadow: 0 0 8px rgba(255, 255, 255, 0.8);
   text-transform: uppercase;
+  font-size: 1.6rem;
 }
 
 .l-header .l-header-inner nav.l-header__nav-top ul li i {
   display: inline-block;
   margin-right: 1rem;
+  text-shadow: none;
+}
+
+.l-header .l-header-inner nav.l-header__nav-top ul li .fa-twitter {
+  color: #1DA1F2;
 }
 
 .l-header .l-header-inner nav.l-header__nav-top ul li img {
-  width: 3rem;
+  width: 2.5rem;
   display: inline-block;
   vertical-align: -20%;
-  margin: 0 7px 0 -6px;
+  margin: 0 4px 0 -6px;
 }
 
 .l-header .l-header-inner nav.l-header__nav-top ul li span {
   margin-left: 1rem;
-  font-size: 1.4rem;
+  font-size: 1.2rem;
 }
 
 .l-header .l-header-inner .clicked.l-header__nav-top {
@@ -306,9 +313,98 @@ view-first
   top: -2px;
 }
 
+/*-------------------------------------------------------------------------------------------------
+
+footer
+
+--------------------------------------------------------------------------------------------------*/
+footer {
+  height: 600px;
+  background-color: #4072B3;
+  color: #fff;
+}
+
 /* -------------------------------------------- */
 /* ▼タブレット用デザイン */
 /* -------------------------------------------- */
+@media screen and (min-width: 768px) {
+  .pc-only {
+    display: block;
+  }
+  .l-header {
+    background-color: #fff;
+    width: 100%;
+    height: 60px;
+    position: fixed;
+    z-index: 22222;
+  }
+  .l-header .l-header-inner {
+    width: 95%;
+    max-width: 1440px;
+    margin: 0 auto;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+  }
+  .l-header .l-header-inner .l-product-logo-pc {
+    width: 44px;
+  }
+  .l-header .l-header-inner .ham {
+    display: none;
+  }
+  .l-header .l-header-inner nav.l-header__nav-top {
+    height: 60px;
+    -webkit-transform: translate(0);
+            transform: translate(0);
+    background-color: transparent;
+    font-size: 1.6rem;
+    position: static;
+  }
+  .l-header .l-header-inner nav.l-header__nav-top .balloon {
+    display: none;
+  }
+  .l-header .l-header-inner nav.l-header__nav-top .gb-menu {
+    width: auto;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    padding: 0;
+    -webkit-box-pack: end;
+        -ms-flex-pack: end;
+            justify-content: flex-end;
+    position: static;
+  }
+  .l-header .l-header-inner nav.l-header__nav-top .gb-menu li {
+    height: 60px;
+    -webkit-transition: .3s;
+    transition: .3s;
+  }
+  .l-header .l-header-inner nav.l-header__nav-top .gb-menu li:hover {
+    text-shadow: 0 2px 2px #bbb;
+    background-color: rgba(192, 192, 192, 0.3);
+    -webkit-box-shadow: 0 15px 30px -5px rgba(0, 0, 0, 0.15), 0 0 5px rgba(0, 0, 0, 0.1);
+            box-shadow: 0 15px 30px -5px rgba(0, 0, 0, 0.15), 0 0 5px rgba(0, 0, 0, 0.1);
+  }
+  .l-header .l-header-inner nav.l-header__nav-top .gb-menu li a {
+    display: inline-block;
+    line-height: 60px;
+    padding: 0 10px 0;
+  }
+  .l-header .l-header-inner nav.l-header__nav-top .gb-menu li a i {
+    margin-right: 0.5rem;
+  }
+  .l-header .l-header-inner nav.l-header__nav-top .gb-menu li a span {
+    display: none;
+  }
+  .l-header .l-header-inner nav.l-header__nav-top .gb-menu li img {
+    width: 2.5rem;
+    margin: 0px 0 5px 0;
+  }
+}
+
 /* ------------------------------------ */
 /* ▼PC用デザイン用デザイン */
 /* ------------------------------------ */
