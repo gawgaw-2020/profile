@@ -240,6 +240,8 @@ view-first
     text-align: center;
     margin: 0 auto;
     h2 {
+      width: 300px;
+      margin: 0 auto;
       text-transform: uppercase;
       color: #fff;
       text-shadow: 0 0 8px rgba(255,255,255,.8);
@@ -248,8 +250,17 @@ view-first
       font-family: copperplate, serif;
       font-weight: 700;
       font-style: normal;
+      position: relative;
       span {
         font-size: 4rem;
+      }
+      p {
+        font-family: fot-tsukubrdgothic-std, sans-serif;
+        font-style: normal;
+        font-weight: bold;
+        position: absolute;
+        top: -10px;
+        right: 100px;
       }
     }
     p {
@@ -290,9 +301,69 @@ footer
 --------------------------------------------------------------------------------------------------*/
 
 footer {
-  height: 600px;
+  padding: 4rem 0;
   background-color: #4072B3;
   color: #fff;
+  font-size: 1.6rem;
+  .main-inner {
+    width: 90%;
+    max-width: 1440px;
+    margin: 0 auto;
+    ul.footer-list {
+      li.footer-contents {
+        padding: 0.5rem 0;
+        margin-bottom: 2.4rem;
+        label {
+          p {
+            font-weight: bold;
+            padding: 0.5rem 0;
+            cursor: pointer;
+            position: relative;
+            &::after {
+              content: '+';    // 擬似要素で表示したい文字
+              font-size: 2.8rem;
+              font-weight: 400;
+              line-height: 3.4rem;
+              position: absolute;
+              right: 5%;
+              top: 0;
+              transition: all 0.35s;
+            }
+          }
+        }
+        input {
+          display: none;
+          &:checked ~ ul.content-list li {
+            height: 3.6rem;
+            padding: 0.5rem;
+            opacity: 1;
+            a {
+              display: inline-block;
+              color: #fff;
+              width: 100%;
+            }
+          }
+          &:checked + label p::after {
+            transform: rotate(315deg);
+          }
+        }
+        ul.content-list {
+          li {
+              height: 0;
+              padding: 0;
+              overflow: hidden;
+              opacity: 0;
+              transition: 0.4s;
+          }
+        }
+      }
+    }
+    .copyright {
+      text-align: center;
+      border-top: 1px solid #fff;
+      padding-top: 1rem;
+    }
+  }
 }
 
 
@@ -301,12 +372,17 @@ footer {
 /* -------------------------------------------- */
 
 @media screen and (min-width: 768px) {
+  
   .pc-only {
     display: block;
   }
+
+  /* -------------------------------------------- */
+  /* 768px〜 ヘッダー用デザイン */
+  /* -------------------------------------------- */
   
   .l-header {
-    background-color: #fff;
+    background-color: rgba(255, 255, 255, 0.9);
     width: 100%;
     height: 60px;
     position: fixed;
@@ -341,6 +417,7 @@ footer {
           li {
             height: 60px;
             transition: .3s;
+            margin-bottom: 0;
             &:hover {
               text-shadow: 0 2px 2px #bbb;
               background-color: rgba(192, 192, 192, 0.3);
@@ -366,9 +443,58 @@ footer {
       }
     }
   }
+  /* -------------------------------------------- */
+  /* 768px〜 ファーストビュー用デザイン */
+  /* -------------------------------------------- */
+
+  .p-grid__view-first .view-first-contents h2 p {
+    top: 2px;
+    right: -47px;
+    transform: rotate(25deg);
+  }
+
+  /* -------------------------------------------- */
+  /* 768px〜 フッター用デザイン */
+  /* -------------------------------------------- */
+
+  footer {
+    .main-inner {
+      ul.footer-list {
+        display: flex;
+        justify-content: flex-end;
+        li.footer-contents {
+          label {
+            p {
+              &::after {
+                display: none;
+              }
+            }
+          }
+          ul.content-list {
+            li {
+              height: 3.6rem;
+              padding: 0.5rem;
+              opacity: 1;
+              a {
+                display: inline-block;
+                color: #fff;
+                width: 100%;
+              }
+            }
+          }
+        }
+      }
+      .copyright {
+        text-align: center;
+        border-top: 1px solid #fff;
+        padding-top: 1rem;
+      }
+    }
+  }
+  
 }
 /* ------------------------------------ */
-/* ▼PC用デザイン用デザイン */
+/* ▼PC用デザイン */
 /* ------------------------------------ */
 @media screen and (min-width: 1024px) {
 
