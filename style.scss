@@ -31,6 +31,9 @@ img {
   display: none;
 }
 
+.text {
+  display: inline-block;
+}
 /*基本文字色を変更*/
 
 /*-------------------------------------------------------------------------------------------------
@@ -38,6 +41,33 @@ img {
 共通部分
 
 --------------------------------------------------------------------------------------------------*/
+.section-inner {
+  width: 95%;
+  max-width: 1440px;
+  margin: 0 auto;
+}
+
+@mixin sectionTitle($titleColor) {
+  font-size: 2.4rem;
+  color: $titleColor;
+  position: relative;
+} 
+
+@mixin sectionTitleModule($sectionTitleModuleColor) {
+  content: '';
+  position: absolute;
+  bottom: -15px;
+  display: inline-block;
+  width: 20%;
+  height: 4px;
+  left: 50%;
+  -moz-transform: translateX(-50%);
+  -webkit-transform: translateX(-50%);
+  -ms-transform: translateX(-50%);
+  transform: translateX(-50%);
+  background-color: $sectionTitleModuleColor;
+  border-radius: 1px;
+}
 
 @mixin btnStyle() {
   opacity: 0.9;
@@ -300,13 +330,79 @@ view-first
 
 /*-------------------------------------------------------------------------------------------------
 
+about
+
+--------------------------------------------------------------------------------------------------*/
+.about {
+  color:#fff; background-color: rgba(64, 114, 179, 0.95);
+  .about-wrap {
+    text-align: center;
+    padding: 9rem 0;
+    .section-inner {
+      .section-title {
+        @include sectionTitle(#fff);
+        margin-bottom: 5.6rem;
+        &:before {
+          @include sectionTitleModule(#EB8686);
+          content: none;
+        }
+      }
+      p {
+        width: 90%;
+        margin: 0 auto;
+        font-size: 1.5rem;
+        margin-bottom: 3.2rem;
+      }
+    }
+  }
+}
+
+
+
+/*-------------------------------------------------------------------------------------------------
+
+contact
+
+--------------------------------------------------------------------------------------------------*/
+.contact {
+  .contact-wrap {
+    text-align: center;
+    padding: 9rem 0;
+    .section-inner {
+      .section-title {
+        @include sectionTitle(#242424);
+        margin-bottom: 5.6rem;
+        &:before {
+          @include sectionTitleModule(#EB8686);
+        }
+      }
+      p {
+        text-align-last: left;
+        width: 90%;
+        margin: 0 auto;
+        font-size: 1.6rem;
+        margin-bottom: 4rem;
+      }
+      .btn-contact {
+        font-size: 1.8em;
+        @include btnColor(#EB8686, #fff, #fff);
+        &:hover {
+          @include btnHover(#EB8686, #fff, #EB8686)
+        }
+      }
+    }
+  }
+}
+
+/*-------------------------------------------------------------------------------------------------
+
 footer
 
 --------------------------------------------------------------------------------------------------*/
 
 footer {
   padding: 4rem 0;
-  background-color: rgba(64, 114, 179, 0.9);
+  background-color: rgba(64, 114, 179, 0.95);
   color: #fff;
   font-size: 1.6rem;
   .main-inner {
@@ -362,12 +458,12 @@ footer {
         }
       }
     }
+  }
     .copyright {
       text-align: center;
       border-top: 1px solid #fff;
       padding-top: 1rem;
     }
-  }
 }
 
 
@@ -454,17 +550,57 @@ footer {
   /* 768px〜 ファーストビュー用デザイン */
   /* -------------------------------------------- */
 
-  .p-grid__view-first .view-first-contents h2 p {
-    top: 2px;
-    right: -47px;
-    transform: rotate(25deg);
-    transition: all 0.2s;
-    &:hover {
+  .p-grid__view-first .view-first-contents h2  {
+    &:hover p {
       font-size: 1.6rem;
       top: -8px;
       right: -57px;
     }
+    p {
+      padding-bottom: 2rem;
+      top: 2px;
+      right: -47px;
+      transform: rotate(25deg);
+      transition: all 0.2s;
+    }
   }
+
+  /* -------------------------------------------- */
+  /* 768px〜 コンタクト用デザイン */
+  /* -------------------------------------------- */
+
+.contact {
+  .contact-wrap {
+    text-align: center;
+    padding: 9rem 0;
+    .section-inner {
+      .section-title {
+        @include sectionTitle(#242424);
+        margin-bottom: 5.6rem;
+        &:before {
+          @include sectionTitleModule(#EB8686);
+        }
+      }
+      p {
+        text-align-last: center;/////
+        line-height: 3.2rem;
+        width: 90%;
+        margin: 0 auto;
+        font-size: 1.6rem;
+        margin-bottom: 4rem;
+      }
+      .btn-contact {
+        font-size: 1.8em;
+        @include btnColor(#EB8686, #fff, #fff);
+        &:hover {
+          @include btnHover(#EB8686, #fff, #EB8686)
+        }
+      }
+    }
+  }
+}
+
+
 
   /* -------------------------------------------- */
   /* 768px〜 フッター用デザイン */
@@ -516,7 +652,7 @@ footer {
   
 }
 /* ------------------------------------ */
-/* ▼PC用デザイン */
+/* ▼PC用デザイン調整 */
 /* ------------------------------------ */
 @media screen and (min-width: 1024px) {
   .pc-only {
