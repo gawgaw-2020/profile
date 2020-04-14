@@ -24,7 +24,8 @@
   <meta name="msapplication-TileColor" content="#da532c">
   <meta name="theme-color" content="#ffffff"> -->
 
-
+  <!-- ↓Swiper.js用のcssファイル↓ -->
+  <link rel="stylesheet" href="https://unpkg.com/swiper/css/swiper.min.css">
   <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css">
   <!-- 以下Webフォント -->
   <link rel="stylesheet" href="https://use.typekit.net/gvt0ghb.css">
@@ -105,6 +106,7 @@
             <a class="p-btn-round btn-works" role="button"  href="http://google.com">Works</a>
           </div>
         </div>
+        <a class="scroll" href="#"><span></span>Scroll</a>
       </div>
     </section>
     <section class="about">
@@ -174,7 +176,7 @@
                   Webでの自動化や課題解決にも興味があるので、
                   将来的にはWebサービスの開発にも携わりたいと思っています。
                   現在は、夫婦円満のためのアプリを個人で開発中です。
-                  →製作事例「Huhu円満」
+                  →製作事例「マリカプ」
                 </p>
               </div>
             </li>
@@ -203,10 +205,26 @@
         </div>
       </div>
     </section>
-    <section class="works" style="color: #fff; background-color: rgba(64, 114, 179, 0.95); height: 300px;">
+    <section class="works">
       <div class="works-wrap">
         <div class="section-inner">
-          <h2 class="section-title">WORKS</h2>
+          <h2 class="section-title">製作実績</h2>
+          <div class="swiper-container p-grid__list">
+            <!-- Sliderのラッパー(各スライドを内包する箱みたいなイメージ) -->
+            <div class="swiper-wrapper">
+                <!-- Slideさせたいコンテンツ -->
+                <div class="swiper-slide p-grid__list-item"><img src="img/want-pic.jpg" alt=""></div>
+                <div class="swiper-slide p-grid__list-item"><img src="img/want-team.jpg" alt=""></div>
+                <div class="swiper-slide p-grid__list-item"><img src="img/want-design.jpg" alt=""></div>
+                <div class="swiper-slide p-grid__list-item"><img src="img/want-design.jpg" alt=""></div>
+                <div class="swiper-slide p-grid__list-item"><img src="img/want-design.jpg" alt=""></div>
+            </div>
+            <!-- ページネーション（※省略可） -->
+            <div class="swiper-pagination"></div>
+            <!-- ナビゲーションボタン（※省略可） -->
+            <div class="swiper-button-prev"></div> 
+            <div class="swiper-button-next"></div>
+          </div>
           <a class="p-btn-round btn-works" role="button"  href="http://google.com">製作物一覧</a>
         </div>
       </div>
@@ -257,12 +275,16 @@
             <li><a href="">Wantedly</a></li>
             <li><a href="">学習まとめブログ</a></li>
             <li><a href="">Twitter</a></li>
+            <li><a href="">GitHub</a></li>
           </ul>
         </li>
       </ul>
     </div>
     <p class="copyright">©️2020 Find tips</p>
   </footer>
+  <!-- Swiper.js用のjsファイル -->
+  <script src="https://unpkg.com/swiper/js/swiper.min.js"></script>
   <script src="js/menu.js" type="text/javascript"></script>
+  <script src="js/swiper.js" type="text/javascript"></script>
 </body>
 </html>

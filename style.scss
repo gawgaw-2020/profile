@@ -325,7 +325,62 @@ view-first
       margin-top: 2.4rem;
     }
   }
+  a.scroll {
+    color: #fff;
+    font-size: 1.4rem;
+    position: absolute;
+    bottom: 10%;
+    left: 50%;
+    z-index: 2;
+    display: inline-block;
+    -webkit-transform: translate(0, -50%);
+    transform: translate(0, -50%);
+    text-decoration: none;
+    span {
+      position: absolute;
+      top: 10px;
+      left: 50%;
+      width: 24px;
+      height: 24px;
+      margin-left: -12px;
+      border-left: 1px solid #fff;
+      border-bottom: 1px solid #fff;
+      -webkit-transform: rotate(-45deg);
+      transform: rotate(-45deg);
+      -webkit-animation: sdb 1.5s infinite;
+      animation: sdb 1.5s infinite;
+      box-sizing: border-box;
+    }
+  }
 }
+
+@-webkit-keyframes sdb {
+  0% {
+    -webkit-transform: rotate(-45deg) translate(0, 0);
+    opacity: 0;
+  }
+  50% {
+    opacity: 1;
+  }
+  100% {
+    -webkit-transform: rotate(-45deg) translate(-20px, 20px);
+    opacity: 0;
+  }
+}
+@keyframes sdb {
+  0% {
+    transform: rotate(-45deg) translate(0, 0);
+    opacity: 0;
+  }
+  50% {
+    opacity: 1;
+  }
+  100% {
+    transform: rotate(-45deg) translate(-20px, 20px);
+    opacity: 0;
+  }
+}
+
 
 .p-btn-round {
   @include btnStyle();
@@ -344,6 +399,7 @@ view-first
     @include btnHover($pink, #fff, $pink)
   }
 }
+
 
 
 /*-------------------------------------------------------------------------------------------------
@@ -398,6 +454,7 @@ want
       }
       .want-list {
         color: #fff;
+        margin-bottom: 4rem;
         li {
           width: 300px;
           height: 424px;
@@ -409,7 +466,7 @@ want
           }
           .card-title {
             text-align: center;
-            font-size: 2.4rem;
+            font-size: 2rem;
             padding: 1.6rem 0;
             font-weight: bold;
             position: relative;
@@ -456,9 +513,41 @@ want
           }
         }
       }
+      a {
+        font-size: 1.8rem;
+      }
     }
   }
 }
+
+/*-------------------------------------------------------------------------------------------------
+
+works
+
+--------------------------------------------------------------------------------------------------*/
+.works {
+  text-align: center;
+  color:#fff;
+  background-color: $baseBlue;
+  .works-wrap {
+    padding: 9rem 0;
+    .section-inner {
+      width: 80%;
+      .section-title {
+        @include sectionTitle(#fff);
+        margin-bottom: 5.6rem;
+        &:before {
+          @include sectionTitleModule($pink);
+        }
+      }
+      .p-grid__list {
+        width: 600px;
+        height: 300px;
+      }
+    }
+  }
+}
+
 
 
 /*-------------------------------------------------------------------------------------------------
