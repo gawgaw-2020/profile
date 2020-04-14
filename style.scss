@@ -7,6 +7,7 @@ html {
 body {
   font-size: 1.0rem;
   color: #242424;
+  background-color: #eee;
   font-family: 'Roboto','Noto Sans JP',sans-serif;
   letter-spacing: inherit;
   -webkit-font-smoothing: antialiased;
@@ -111,10 +112,10 @@ $pink: rgba(235, 134, 134, 0.95);
 @mixin cardBgBlue() {
   background: #6088C6;
   background:
-  linear-gradient(115deg, transparent 75%, rgba(255,255,255,.2) 75%) 0 0,
-  linear-gradient(245deg, transparent 75%, rgba(255,255,255,.2) 75%) 0 0,
-  linear-gradient(115deg, transparent 75%, rgba(255,255,255,.2) 75%) 7px -15px,
-  linear-gradient(245deg, transparent 75%, rgba(255,255,255,.2) 75%) 7px -15px,
+  linear-gradient(115deg, transparent 75%, rgba(255,255,255,.1) 75%) 0 0,
+  linear-gradient(245deg, transparent 75%, rgba(255,255,255,.1) 75%) 0 0,
+  linear-gradient(115deg, transparent 75%, rgba(255,255,255,.1) 75%) 7px -15px,
+  linear-gradient(245deg, transparent 75%, rgba(255,255,255,.1) 75%) 7px -15px,
   #6088C6;
   background-size: 15px 30px;
 }
@@ -145,6 +146,8 @@ header
         height: 2px;
         background-color: #fff;
         transition: all 0.3s;
+        box-shadow: 1px 1px 3px $baseBlue;
+
         &:first-child {
           top: 5px;
         }
@@ -401,6 +404,9 @@ want
           margin: 0 auto 2.4rem;
           border-radius: 16px;
           box-shadow: 2px 2px 6px  rgba(0,0,0,0.5);
+          img {
+            height: 168px;
+          }
           .card-title {
             text-align: center;
             font-size: 2.4rem;
@@ -428,6 +434,16 @@ want
             background-color: $pink;
             .card-title:before {
               border-left: 69.282px solid #6088C6;
+            }
+          }
+          .text-wrap {
+            padding: 0.8rem 1.6rem;
+            .card-text {
+              font-size: 1.6rem;
+              padding: 0 0.9rem;
+              background: linear-gradient(transparent 0, transparent 97%, #ddd 100%);
+              background-size: 100% 2.8rem;
+              line-height: 2.8rem;
             }
           }
         }

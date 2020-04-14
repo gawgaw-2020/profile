@@ -6,6 +6,7 @@ html {
 body {
   font-size: 1.0rem;
   color: #242424;
+  background-color: #eee;
   font-family: 'Roboto','Noto Sans JP',sans-serif;
   letter-spacing: inherit;
   -webkit-font-smoothing: antialiased;
@@ -74,6 +75,8 @@ header
   background-color: #fff;
   -webkit-transition: all 0.3s;
   transition: all 0.3s;
+  -webkit-box-shadow: 1px 1px 3px rgba(64, 114, 179, 0.95);
+          box-shadow: 1px 1px 3px rgba(64, 114, 179, 0.95);
 }
 
 .l-header .l-header-inner .ham span:first-child {
@@ -430,8 +433,12 @@ want
   -webkit-box-shadow: 2px 2px 6px rgba(0, 0, 0, 0.5);
           box-shadow: 2px 2px 6px rgba(0, 0, 0, 0.5);
   background: #6088C6;
-  background: linear-gradient(115deg, transparent 75%, rgba(255, 255, 255, 0.2) 75%) 0 0, linear-gradient(245deg, transparent 75%, rgba(255, 255, 255, 0.2) 75%) 0 0, linear-gradient(115deg, transparent 75%, rgba(255, 255, 255, 0.2) 75%) 7px -15px, linear-gradient(245deg, transparent 75%, rgba(255, 255, 255, 0.2) 75%) 7px -15px, #6088C6;
+  background: linear-gradient(115deg, transparent 75%, rgba(255, 255, 255, 0.1) 75%) 0 0, linear-gradient(245deg, transparent 75%, rgba(255, 255, 255, 0.1) 75%) 0 0, linear-gradient(115deg, transparent 75%, rgba(255, 255, 255, 0.1) 75%) 7px -15px, linear-gradient(245deg, transparent 75%, rgba(255, 255, 255, 0.1) 75%) 7px -15px, #6088C6;
   background-size: 15px 30px;
+}
+
+.want .want-wrap .section-inner .want-list li img {
+  height: 168px;
 }
 
 .want .want-wrap .section-inner .want-list li .card-title {
@@ -466,6 +473,19 @@ want
 
 .want .want-wrap .section-inner .want-list li:nth-of-type(even) .card-title:before {
   border-left: 69.282px solid #6088C6;
+}
+
+.want .want-wrap .section-inner .want-list li .text-wrap {
+  padding: 0.8rem 1.6rem;
+}
+
+.want .want-wrap .section-inner .want-list li .text-wrap .card-text {
+  font-size: 1.6rem;
+  padding: 0 0.9rem;
+  background: -webkit-gradient(linear, left top, left bottom, color-stop(0, transparent), color-stop(97%, transparent), to(#ddd));
+  background: linear-gradient(transparent 0, transparent 97%, #ddd 100%);
+  background-size: 100% 2.8rem;
+  line-height: 2.8rem;
 }
 
 @media screen and (min-width: 768px) {
