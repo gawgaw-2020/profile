@@ -46,6 +46,11 @@ img {
   max-width: 1440px;
   margin: 0 auto;
 }
+$textBlack: #242424;
+
+$baseBlue: rgba(64, 114, 179, 0.95);
+
+$pink: rgba(235, 134, 134, 0.95);
 
 @mixin sectionTitle($titleColor) {
   font-size: 2.4rem;
@@ -103,6 +108,16 @@ img {
   top: -2px;
 }
 
+@mixin cardBgBlue() {
+  background: #6088C6;
+  background:
+  linear-gradient(115deg, transparent 75%, rgba(255,255,255,.2) 75%) 0 0,
+  linear-gradient(245deg, transparent 75%, rgba(255,255,255,.2) 75%) 0 0,
+  linear-gradient(115deg, transparent 75%, rgba(255,255,255,.2) 75%) 7px -15px,
+  linear-gradient(245deg, transparent 75%, rgba(255,255,255,.2) 75%) 7px -15px,
+  #6088C6;
+  background-size: 15px 30px;
+}
 
 /*-------------------------------------------------------------------------------------------------
 
@@ -184,7 +199,7 @@ header
           padding: 1.6rem 1.6rem;
           .says {
             border-radius: 1.2rem;
-            background: rgba(235, 134, 134, 0.7);
+            background: $pink;
             position: relative;
             &:after {
               content: "";
@@ -193,7 +208,7 @@ header
               top: 50%; 
               left: -24px;
               border: 12px solid transparent;
-              border-right: 12px solid rgba(235, 134, 134, 0.7);
+              border-right: 12px solid $pink;
             }
             p {
               font-size: 1.4rem;
@@ -321,9 +336,9 @@ view-first
 }
 
 .btn-works {
-  @include btnColor(#EB8686, #fff, #fff);
+  @include btnColor($pink, #fff, #fff);
   &:hover {
-    @include btnHover(#EB8686, #fff, #EB8686)
+    @include btnHover($pink, #fff, $pink)
   }
 }
 
@@ -334,7 +349,8 @@ about
 
 --------------------------------------------------------------------------------------------------*/
 .about {
-  color:#fff; background-color: rgba(64, 114, 179, 0.95);
+  color:#fff;
+  background-color: $baseBlue;
   .about-wrap {
     text-align: center;
     padding: 9rem 0;
@@ -343,7 +359,7 @@ about
         @include sectionTitle(#fff);
         margin-bottom: 5.6rem;
         &:before {
-          @include sectionTitleModule(#EB8686);
+          @include sectionTitleModule($pink);
           content: none;
         }
       }
@@ -357,6 +373,76 @@ about
   }
 }
 
+/*-------------------------------------------------------------------------------------------------
+
+want
+
+--------------------------------------------------------------------------------------------------*/
+
+
+.want {
+  .want-wrap {
+    padding: 9rem 0;
+    .section-inner {
+      max-width: 1080px;
+      .section-title {
+        @include sectionTitle($textBlack);
+        text-align: center;
+        margin-bottom: 6.4rem;
+        &:before {
+          @include sectionTitleModule($pink);
+        }
+      }
+      .want-list {
+        color: #fff;
+        li {
+          width: 300px;
+          height: 424px;
+          margin: 0 auto 2.4rem;
+          border-radius: 16px;
+          box-shadow: 2px 2px 6px  rgba(0,0,0,0.5);
+          .card-title {
+            text-align: center;
+            font-size: 2.4rem;
+            padding: 1.6rem 0;
+            font-weight: bold;
+            position: relative;
+            span {
+              position: absolute;
+              top: 13px;
+              left: 6px;
+            }
+            &:before {
+              content: "";
+              position: absolute;
+              top: -8px;
+              left: -12px;
+              border-top: 40px solid transparent;
+              border-bottom: 40px solid transparent;
+              border-left: 69.282px solid $pink;
+              filter:drop-shadow(2px 2px 2px rgba(0,0,0,0.5));
+            }
+          }
+          @include cardBgBlue();
+          &:nth-of-type(even) {
+            background-color: $pink;
+            .card-title:before {
+              border-left: 69.282px solid #6088C6;
+            }
+          }
+        }
+        @media screen and (min-width: 768px) {
+          display: flex;
+          flex-wrap: wrap;
+          justify-content: center;
+          li {
+            margin: 0 2.2rem 4.8rem;
+          }
+        }
+      }
+    }
+  }
+}
 
 
 /*-------------------------------------------------------------------------------------------------
@@ -370,10 +456,10 @@ contact
     padding: 9rem 0;
     .section-inner {
       .section-title {
-        @include sectionTitle(#242424);
+        @include sectionTitle($textBlack);
         margin-bottom: 5.6rem;
         &:before {
-          @include sectionTitleModule(#EB8686);
+          @include sectionTitleModule(4pink);
         }
       }
       p {
@@ -385,9 +471,9 @@ contact
       }
       .btn-contact {
         font-size: 1.8em;
-        @include btnColor(#EB8686, #fff, #fff);
+        @include btnColor($pink, #fff, #fff);
         &:hover {
-          @include btnHover(#EB8686, #fff, #EB8686)
+          @include btnHover($pink, #fff, $pink)
         }
       }
     }
@@ -402,7 +488,7 @@ footer
 
 footer {
   padding: 4rem 0;
-  background-color: rgba(64, 114, 179, 0.95);
+  background-color: $baseBlue;
   color: #fff;
   font-size: 1.6rem;
   .main-inner {
@@ -420,7 +506,7 @@ footer {
             cursor: pointer;
             position: relative;
             &::after {
-              content: '+';    // 擬似要素で表示したい文字
+              content: '+';
               font-size: 2.8rem;
               font-weight: 400;
               line-height: 3.4rem;
@@ -575,10 +661,10 @@ footer {
     padding: 9rem 0;
     .section-inner {
       .section-title {
-        @include sectionTitle(#242424);
+        @include sectionTitle($textBlack);
         margin-bottom: 5.6rem;
         &:before {
-          @include sectionTitleModule(#EB8686);
+          @include sectionTitleModule($pink);
         }
       }
       p {
@@ -591,9 +677,9 @@ footer {
       }
       .btn-contact {
         font-size: 1.8em;
-        @include btnColor(#EB8686, #fff, #fff);
+        @include btnColor($pink, #fff, #fff);
         &:hover {
-          @include btnHover(#EB8686, #fff, #EB8686)
+          @include btnHover($pink, #fff, $pink)
         }
       }
     }
@@ -636,7 +722,7 @@ footer {
                 width: 100%;
                 transition: all 0.2s;
                 &:hover {
-                  color: #EB8686;  
+                  color: $pink;  
               }
             }
           }

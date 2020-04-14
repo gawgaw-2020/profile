@@ -148,7 +148,7 @@ header
 
 .l-header .l-header-inner nav.l-header__nav-top .balloon .chatting .says {
   border-radius: 1.2rem;
-  background: rgba(235, 134, 134, 0.7);
+  background: rgba(235, 134, 134, 0.95);
   position: relative;
 }
 
@@ -159,7 +159,7 @@ header
   top: 50%;
   left: -24px;
   border: 12px solid transparent;
-  border-right: 12px solid rgba(235, 134, 134, 0.7);
+  border-right: 12px solid rgba(235, 134, 134, 0.95);
 }
 
 .l-header .l-header-inner nav.l-header__nav-top .balloon .chatting .says p {
@@ -324,16 +324,16 @@ view-first
 }
 
 .btn-works {
-  background: #EB8686;
+  background: rgba(235, 134, 134, 0.95);
   border: 1px solid #fff;
   color: #fff;
 }
 
 .btn-works:hover {
   opacity: 0.8;
-  color: #EB8686;
+  color: rgba(235, 134, 134, 0.95);
   background-color: #fff;
-  border: 2px solid #EB8686;
+  border: 2px solid rgba(235, 134, 134, 0.95);
   -webkit-box-shadow: 0 4px 4px rgba(0, 0, 0, 0.25);
           box-shadow: 0 4px 4px rgba(0, 0, 0, 0.25);
   top: -2px;
@@ -371,7 +371,7 @@ about
   left: 50%;
   -webkit-transform: translateX(-50%);
   transform: translateX(-50%);
-  background-color: #EB8686;
+  background-color: rgba(235, 134, 134, 0.95);
   border-radius: 1px;
   content: none;
 }
@@ -381,6 +381,107 @@ about
   margin: 0 auto;
   font-size: 1.5rem;
   margin-bottom: 3.2rem;
+}
+
+/*-------------------------------------------------------------------------------------------------
+
+want
+
+--------------------------------------------------------------------------------------------------*/
+.want .want-wrap {
+  padding: 9rem 0;
+}
+
+.want .want-wrap .section-inner {
+  max-width: 1080px;
+}
+
+.want .want-wrap .section-inner .section-title {
+  font-size: 2.4rem;
+  color: #242424;
+  position: relative;
+  text-align: center;
+  margin-bottom: 6.4rem;
+}
+
+.want .want-wrap .section-inner .section-title:before {
+  content: '';
+  position: absolute;
+  bottom: -15px;
+  display: inline-block;
+  width: 20%;
+  height: 4px;
+  left: 50%;
+  -webkit-transform: translateX(-50%);
+  transform: translateX(-50%);
+  background-color: rgba(235, 134, 134, 0.95);
+  border-radius: 1px;
+}
+
+.want .want-wrap .section-inner .want-list {
+  color: #fff;
+}
+
+.want .want-wrap .section-inner .want-list li {
+  width: 300px;
+  height: 424px;
+  margin: 0 auto 2.4rem;
+  border-radius: 16px;
+  -webkit-box-shadow: 2px 2px 6px rgba(0, 0, 0, 0.5);
+          box-shadow: 2px 2px 6px rgba(0, 0, 0, 0.5);
+  background: #6088C6;
+  background: linear-gradient(115deg, transparent 75%, rgba(255, 255, 255, 0.2) 75%) 0 0, linear-gradient(245deg, transparent 75%, rgba(255, 255, 255, 0.2) 75%) 0 0, linear-gradient(115deg, transparent 75%, rgba(255, 255, 255, 0.2) 75%) 7px -15px, linear-gradient(245deg, transparent 75%, rgba(255, 255, 255, 0.2) 75%) 7px -15px, #6088C6;
+  background-size: 15px 30px;
+}
+
+.want .want-wrap .section-inner .want-list li .card-title {
+  text-align: center;
+  font-size: 2.4rem;
+  padding: 1.6rem 0;
+  font-weight: bold;
+  position: relative;
+}
+
+.want .want-wrap .section-inner .want-list li .card-title span {
+  position: absolute;
+  top: 13px;
+  left: 6px;
+}
+
+.want .want-wrap .section-inner .want-list li .card-title:before {
+  content: "";
+  position: absolute;
+  top: -8px;
+  left: -12px;
+  border-top: 40px solid transparent;
+  border-bottom: 40px solid transparent;
+  border-left: 69.282px solid rgba(235, 134, 134, 0.95);
+  -webkit-filter: drop-shadow(2px 2px 2px rgba(0, 0, 0, 0.5));
+          filter: drop-shadow(2px 2px 2px rgba(0, 0, 0, 0.5));
+}
+
+.want .want-wrap .section-inner .want-list li:nth-of-type(even) {
+  background-color: rgba(235, 134, 134, 0.95);
+}
+
+.want .want-wrap .section-inner .want-list li:nth-of-type(even) .card-title:before {
+  border-left: 69.282px solid #6088C6;
+}
+
+@media screen and (min-width: 768px) {
+  .want .want-wrap .section-inner .want-list {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  .want .want-wrap .section-inner .want-list li {
+    margin: 0 2.2rem 4.8rem;
+  }
 }
 
 /*-------------------------------------------------------------------------------------------------
@@ -410,7 +511,7 @@ contact
   left: 50%;
   -webkit-transform: translateX(-50%);
   transform: translateX(-50%);
-  background-color: #EB8686;
+  background-color: 4pink;
   border-radius: 1px;
 }
 
@@ -424,16 +525,16 @@ contact
 
 .contact .contact-wrap .section-inner .btn-contact {
   font-size: 1.8em;
-  background: #EB8686;
+  background: rgba(235, 134, 134, 0.95);
   border: 1px solid #fff;
   color: #fff;
 }
 
 .contact .contact-wrap .section-inner .btn-contact:hover {
   opacity: 0.8;
-  color: #EB8686;
+  color: rgba(235, 134, 134, 0.95);
   background-color: #fff;
-  border: 2px solid #EB8686;
+  border: 2px solid rgba(235, 134, 134, 0.95);
   -webkit-box-shadow: 0 4px 4px rgba(0, 0, 0, 0.25);
           box-shadow: 0 4px 4px rgba(0, 0, 0, 0.25);
   top: -2px;
@@ -641,7 +742,7 @@ footer .copyright {
     left: 50%;
     -webkit-transform: translateX(-50%);
     transform: translateX(-50%);
-    background-color: #EB8686;
+    background-color: rgba(235, 134, 134, 0.95);
     border-radius: 1px;
   }
   .contact .contact-wrap .section-inner p {
@@ -654,15 +755,15 @@ footer .copyright {
   }
   .contact .contact-wrap .section-inner .btn-contact {
     font-size: 1.8em;
-    background: #EB8686;
+    background: rgba(235, 134, 134, 0.95);
     border: 1px solid #fff;
     color: #fff;
   }
   .contact .contact-wrap .section-inner .btn-contact:hover {
     opacity: 0.8;
-    color: #EB8686;
+    color: rgba(235, 134, 134, 0.95);
     background-color: #fff;
-    border: 2px solid #EB8686;
+    border: 2px solid rgba(235, 134, 134, 0.95);
     -webkit-box-shadow: 0 4px 4px rgba(0, 0, 0, 0.25);
             box-shadow: 0 4px 4px rgba(0, 0, 0, 0.25);
     top: -2px;
@@ -703,7 +804,7 @@ footer .copyright {
     transition: all 0.2s;
   }
   footer .main-inner ul.footer-list li.footer-contents ul.content-list a:hover {
-    color: #EB8686;
+    color: rgba(235, 134, 134, 0.95);
   }
   footer .copyright {
     text-align: center;
