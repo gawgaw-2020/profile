@@ -409,6 +409,103 @@ view-first
 
 /*-------------------------------------------------------------------------------------------------
 
+sub-view
+
+-------------------------------------------------------------------------------------------------*/
+.subView {
+  padding-top: 60px;
+  background-image: url(../img/subView.jpg);
+  background-size: cover;
+  z-index: 500;
+}
+
+.subView.overlay::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 290px;
+  width: 100%;
+  background: rgba(0, 0, 0, 0.4);
+}
+
+.subView .subView-inner {
+  position: relative;
+  margin: 0 auto;
+  height: 230px;
+}
+
+.subView .subView-inner .subView-textContent {
+  text-align: center;
+  z-index: 500;
+  background-color: #EB8686;
+  opacity: 0.95;
+  width: 70%;
+  max-width: 980px;
+  height: 30%;
+  border-radius: 10px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translateY(-60%) translateX(-47%);
+          transform: translateY(-60%) translateX(-47%);
+}
+
+.subView .subView-inner .subView-textContent h1 {
+  color: #fff;
+  font-size: 4rem;
+  font-family: 'Cabin Sketch', cursive;
+  position: absolute;
+  top: 53%;
+  left: 47%;
+  -webkit-transform: translateY(-50%) translateX(-50%);
+          transform: translateY(-50%) translateX(-50%);
+}
+
+.subView .subView-inner .subView-breadCrumbs {
+  z-index: 499;
+  position: absolute;
+  border-radius: 10px;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translateY(-30%) translateX(-53%);
+          transform: translateY(-30%) translateX(-53%);
+  background-color: rgba(64, 114, 179, 0.95);
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: end;
+      -ms-flex-align: end;
+          align-items: flex-end;
+  width: 70%;
+  max-width: 980px;
+  margin: 0 auto;
+  padding: 0 1rem;
+  height: 30%;
+}
+
+.subView .subView-inner .subView-breadCrumbs li {
+  font-size: 1.2rem;
+  padding: 0.1rem 0;
+}
+
+.subView .subView-inner .subView-breadCrumbs li a {
+  color: #fff;
+  -webkit-transition: all 0.3s;
+  transition: all 0.3s;
+}
+
+.subView .subView-inner .subView-breadCrumbs li a:hover {
+  text-shadow: 0 0 8px rgba(255, 255, 255, 0.8);
+}
+
+.subView .subView-inner .subView-breadCrumbs li span {
+  color: #fff;
+  margin: 0 10px;
+}
+
+/*-------------------------------------------------------------------------------------------------
+
 about
 
 -------------------------------------------------------------------------------------------------*/
@@ -630,6 +727,7 @@ works
 .works .works-wrap .section-inner .swiper-container.p-grid__list {
   position: relative;
   margin-bottom: 10rem;
+  max-width: 980px;
 }
 
 .works .works-wrap .section-inner .swiper-container.p-grid__list .swiper-wrapper .p-grid__list-item {
@@ -687,6 +785,42 @@ works
 
 /*-------------------------------------------------------------------------------------------------
 
+skill
+
+-------------------------------------------------------------------------------------------------*/
+.skill {
+  color: #fff;
+  background-color: rgba(64, 114, 179, 0.95);
+}
+
+.skill .skill-wrap {
+  text-align: center;
+  padding: 9rem 0;
+}
+
+.skill .skill-wrap .section-inner .section-title {
+  font-size: 2.4rem;
+  color: #fff;
+  position: relative;
+  margin-bottom: 5.6rem;
+}
+
+.skill .skill-wrap .section-inner .section-title:before {
+  content: '';
+  position: absolute;
+  bottom: -15px;
+  display: inline-block;
+  width: 20%;
+  height: 4px;
+  left: 50%;
+  -webkit-transform: translateX(-50%);
+  transform: translateX(-50%);
+  background-color: rgba(235, 134, 134, 0.95);
+  border-radius: 1px;
+}
+
+/*-------------------------------------------------------------------------------------------------
+
 contact
 
 -------------------------------------------------------------------------------------------------*/
@@ -717,7 +851,7 @@ contact
 }
 
 .contact .contact-wrap .section-inner p {
-  text-align-last: left;
+  text-align: left;
   width: 90%;
   margin: 0 auto;
   font-size: 1.6rem;
@@ -883,7 +1017,7 @@ footer .copyright {
     position: static;
   }
   .l-header .l-header-inner nav.l-header__nav-top .gb-menu li {
-    height: 60px;
+    height: 58px;
     -webkit-transition: .3s;
     transition: .3s;
     margin-bottom: 0;
@@ -953,7 +1087,7 @@ footer .copyright {
     border-radius: 1px;
   }
   .contact .contact-wrap .section-inner p {
-    text-align-last: center;
+    text-align: center;
     line-height: 3.2rem;
     width: 90%;
     margin: 0 auto;
