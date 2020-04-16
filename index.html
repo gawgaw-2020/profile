@@ -7,6 +7,13 @@
   <meta name="description" content="Webサイト製作・Webサービス開発者タクヤのポートフォリオサイトです。Webサイト制作、Webアプリ開発、自動化ツール開発のご相談・ご依頼はお問い合わせまで。">
   <link href="css/reset.css" rel="stylesheet">
   <link href="css/style.css" rel="stylesheet">
+    <!-- ↓Swiper.js用のcssファイル↓ -->
+  <link rel="stylesheet" href="https://unpkg.com/swiper/css/swiper.min.css">
+    <!-- ↓animate.js用のcssファイル↓ -->
+  <link rel="stylesheet" href="css/animate.css">
+      <!-- ↓fontawesome用のcssファイル↓ -->
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css">
+
   <!-- OGP Tag data-->
   <!-- OGPとは「Open Graph protocol」の略称。FacebookやTwitter、Google+、mixiなどのSNSでシェアされた際に、そのページのタイトル・URL・概要・アイキャッチ画像（サムネイル）を意図した通りに正しく表示させる仕組み -->
   <meta property="og:description" content="Webサイト製作・Webサービス開発者タクヤのポートフォリオサイトです。Webサイト制作、Webアプリ開発、自動化ツール開発のご相談・ご依頼はお問い合わせまで。">
@@ -24,9 +31,6 @@
   <meta name="msapplication-TileColor" content="#da532c">
   <meta name="theme-color" content="#ffffff"> -->
 
-  <!-- ↓Swiper.js用のcssファイル↓ -->
-  <link rel="stylesheet" href="https://unpkg.com/swiper/css/swiper.min.css">
-  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css">
   <!-- 以下Webフォント -->
   <link rel="stylesheet" href="https://use.typekit.net/gvt0ghb.css">
   <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP&display=swap" rel="stylesheet">
@@ -41,8 +45,6 @@
       h=d.documentElement,t=setTimeout(function(){h.className=h.className.replace(/\bwf-loading\b/g,"")+" wf-inactive";},config.scriptTimeout),tk=d.createElement("script"),f=false,s=d.getElementsByTagName("script")[0],a;h.className+=" wf-loading";tk.src='https://use.typekit.net/'+config.kitId+'.js';tk.async=true;tk.onload=tk.onreadystatechange=function(){a=this.readyState;if(f||a&&a!="complete"&&a!="loaded")return;f=true;clearTimeout(t);try{Typekit.load(config)}catch(e){}};s.parentNode.insertBefore(tk,s)
     })(document);
   </script>
-  <!-- jQuery -->
-  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
 </head>
 <body>
   <header class="l-header">
@@ -97,14 +99,14 @@
       <div class="p-grid__view-first">
         <video src="img/first-view.mp4" autoplay muted loop playsinline poster="img/fv-ready.png"></video>
         <div class="view-first-contents">
-          <h2>
+          <h2 class="animated slower" data-animate="tada">
             <span>t</span>akuya <span>o</span>gawa
             <p>＼ 転職活動中 ／</p>
           </h2>
           <p>東京のWebサイト製作・Webサービス開発者</p>
           <div class="view-first-btns">
-            <a class="p-btn-round btn-about" role="button"  href="http://google.com">About me</a>
-            <a class="p-btn-round btn-works" role="button"  href="http://google.com">Works</a>
+            <a class="p-btn-round btn-about" role="button"  href="about/index.html">About me</a>
+            <a class="p-btn-round btn-works" role="button"  href="about/index.html">Works</a>
           </div>
         </div>
         <a class="scroll" href="#"><span></span>Scroll</a>
@@ -113,7 +115,7 @@
     <section class="about">
       <div class="about-wrap">
         <div class="section-inner">
-          <h2 class="section-title"><span class="text">「他人に迷惑をかけず、</span><span class="text">自分のために行動」</span> </h2>
+          <h2 class="section-title animated" data-animate="fadeInUp"><span class="text">「他人に迷惑をかけず、</span><span class="text">自分のために行動」</span> </h2>
           <p>
             私が働く上で大切にしている言葉です。 
             <sapn class="text">「自分のため」が1番頑張れます。</sapn>
@@ -135,7 +137,7 @@
     <section class="want">
       <div class="want-wrap">
         <div class="section-inner">
-          <h2 class="section-title">このさきやってみたいこと</h2>
+          <h2 class="section-title animated" data-animate="fadeInUp">このさきやってみたいこと</h2>
           <ul class="want-list">
             <li>
               <h3 class="card-title"><span>1</span>コーディング</h3>
@@ -315,7 +317,10 @@
   </footer>
   <!-- Swiper.js用のjsファイル -->
   <script src="https://unpkg.com/swiper/js/swiper.min.js"></script>
+  <!-- ↓jQuery↓ -->
+  <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha256-pasqAKBDmFT4eHoN2ndd6lN370kFiGUFyTiUHWhU7k8=" crossorigin="anonymous"></script>
   <script src="js/menu.js" type="text/javascript"></script>
   <script src="js/swiper.js" type="text/javascript"></script>
+  <script src="js/animate.js" type="text/javascript"></script>
 </body>
 </html>

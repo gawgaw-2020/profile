@@ -171,6 +171,7 @@ header
     }
     //ここまでハンバーガーメニュー
     nav.l-header__nav-top {
+      z-index: 100;
       transform: translate(100%);
       position: fixed;
       top: 0;
@@ -412,7 +413,7 @@ sub-view
   padding-top: 60px;
   background-image: url(../img/subView.jpg);
   background-size: cover;
-  z-index: 500;
+  z-index: 10;
   &.overlay::after {
     content: "";
     position: absolute;
@@ -426,6 +427,7 @@ sub-view
     position: relative;
     margin: 0 auto;
     height: 230px;
+    z-index: 50;
     .subView-textContent {
       text-align: center;
       z-index: 500;
@@ -450,7 +452,7 @@ sub-view
       }
     }
     .subView-breadCrumbs {
-      z-index: 499;
+      z-index: 49;
       position: absolute;
       border-radius: 10px;
       top: 50%;
