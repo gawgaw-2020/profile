@@ -251,8 +251,8 @@ view-first
   position: absolute;
   top: 50%;
   left: 50%;
-  -webkit-transform: translate(-50%, -25%);
-          transform: translate(-50%, -25%);
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
   width: 95%;
   text-align: center;
   margin: 0 auto;
@@ -1171,6 +1171,10 @@ footer .copyright {
   .l-header .l-header-inner .l-product-logo-pc a .logo {
     width: 200px;
     padding: 20px 20px 0;
+  }
+  .p-grid__view-first .view-first-contents {
+    -webkit-transform: translate(-50%, -25%);
+            transform: translate(-50%, -25%);
   }
   footer .main-inner {
     display: -webkit-box;

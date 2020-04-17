@@ -291,7 +291,7 @@ view-first
     position: absolute;
     top: 50%;
     left: 50%;
-    transform: translate(-50%, -25%);
+    transform: translate(-50%, -50%);
     width: 95%;
     text-align: center;
     margin: 0 auto;
@@ -1016,6 +1016,10 @@ footer {
         } 
       }
     }
+  }
+
+  .p-grid__view-first .view-first-contents {
+    transform: translate(-50%, -25%);
   }
 
   footer {
