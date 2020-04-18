@@ -796,7 +796,6 @@ skill
 }
 
 .skill .skill-wrap {
-  text-align: center;
   padding: 9rem 0;
 }
 
@@ -804,6 +803,7 @@ skill
   font-size: 2.4rem;
   color: #fff;
   position: relative;
+  text-align: center;
   margin-bottom: 5.6rem;
 }
 
@@ -819,6 +819,123 @@ skill
   transform: translateX(-50%);
   background-color: rgba(235, 134, 134, 0.95);
   border-radius: 1px;
+}
+
+.skill .skill-wrap .section-inner .history-wrap .history-list {
+  width: 90%;
+  max-width: 1040px;
+  margin: 0 auto;
+  text-align: left;
+  font-size: 1.6rem;
+}
+
+.skill .skill-wrap .section-inner .history-wrap .history-list .history-item {
+  border-left: 4px solid #fff;
+  padding: 0 0 4rem;
+}
+
+@media screen and (min-width: 768px) {
+  .skill .skill-wrap .section-inner .history-wrap .history-list .history-item {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .skill .skill-wrap .section-inner .history-wrap .history-list .history-item .skill-left {
+    width: 50%;
+  }
+}
+
+.skill .skill-wrap .section-inner .history-wrap .history-list .history-item .skill-left .age {
+  font-size: 1.8rem;
+  width: 30%;
+  color: rgba(235, 134, 134, 0.95);
+  margin-right: auto;
+  margin-bottom: 1rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.skill .skill-wrap .section-inner .history-wrap .history-list .history-item .skill-left .age::before {
+  margin-right: 0.5rem;
+  color: #fff;
+  border-top: 1px solid;
+  content: "";
+  -webkit-box-flex: 1;
+      -ms-flex-positive: 1;
+          flex-grow: 1;
+}
+
+.skill .skill-wrap .section-inner .history-wrap .history-list .history-item .skill-left .age-title {
+  display: inline-block;
+  margin: 0 2rem 1rem;
+  padding: 0.5rem 1rem;
+  font-size: 2rem;
+  font-weight: bold;
+  border: 1px solid #fff;
+  border-left: 4px solid #fff;
+  border-right: 4px solid #fff;
+}
+
+.skill .skill-wrap .section-inner .history-wrap .history-list .history-item .skill-left dl {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+.skill .skill-wrap .section-inner .history-wrap .history-list .history-item .skill-left dl dt {
+  width: 25%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.skill .skill-wrap .section-inner .history-wrap .history-list .history-item .skill-left dl dt::before {
+  border-top: 1px solid;
+  content: "";
+  -webkit-box-flex: 1;
+      -ms-flex-positive: 1;
+          flex-grow: 1;
+  margin-right: 0.5rem;
+}
+
+.skill .skill-wrap .section-inner .history-wrap .history-list .history-item .skill-left dl dd {
+  width: 75%;
+  padding-left: 1.6rem;
+}
+
+@media screen and (min-width: 768px) {
+  .skill .skill-wrap .section-inner .history-wrap .history-list .history-item .skill-right {
+    width: 50%;
+  }
+}
+
+.skill .skill-wrap .section-inner .history-wrap .history-list .history-item .skill-right .age-text {
+  width: 95%;
+  margin: 0 auto;
+  font-size: 1.4rem;
+  margin-bottom: 1rem;
+  padding: 1rem;
+}
+
+.skill .skill-wrap .section-inner .history-wrap .history-list .history-item .skill-right .age-private {
+  font-size: 1.4rem;
+  width: 90%;
+  margin: 0 auto;
+  padding: 1rem;
+  background-color: #6088C6;
+  border-radius: 10px;
 }
 
 /*-------------------------------------------------------------------------------------------------
