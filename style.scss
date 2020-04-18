@@ -538,11 +538,17 @@ want
         color: #fff;
         margin-bottom: 4rem;
         li {
+          position: relative;
           width: 300px;
           height: 424px;
           margin: 0 auto 2.4rem;
           border-radius: 16px;
           box-shadow: 2px 2px 6px  rgba(0,0,0,0.5);
+          transition: all .5s cubic-bezier(.68,-2,.45,2);
+          &:hover {
+            transform: translateY(-15px);
+            box-shadow: 2px 8px 12px  rgba(0,0,0,0.5);
+          }
           img {
             height: 168px;
           }
@@ -707,9 +713,10 @@ skill
           font-size: 1.6rem;
           .history-item {
             border-left: 4px solid #fff;
-            padding: 0 0 4rem;
+            padding: 0 0 5rem;
             @media screen and (min-width: 768px) {
               display: flex;
+              margin-left: 5%;
             }
             .skill-left {
               @media screen and (min-width: 768px) {
@@ -718,7 +725,7 @@ skill
               .age {
                 font-size: 1.8rem;
                 width: 30%;
-                color: $pink;
+                color: #FC9D9D;
                 margin-right: auto;
                 margin-bottom: 1rem;
                 display: flex;
@@ -730,22 +737,30 @@ skill
                   content: "";
                   flex-grow: 1;
                 }
+                @media screen and (min-width: 768px) {
+                  margin-bottom: 2.5rem;
+                }
               }
               .age-title {
+                color: $baseBlue;
+                background-color: #EEF9FF;
                 display: inline-block;
                 margin: 0 2rem 1rem;
                 padding: 0.5rem 1rem;
                 font-size: 2rem;
                 font-weight: bold;
-                border: 1px solid #fff;
-                border-left: 4px solid #fff;
-                border-right: 4px solid #fff;
+                border: 2px solid #AAD6EC;
+                border-left: 5px solid #AAD6EC;
+                border-right: 5px solid #AAD6EC;
+                @media screen and (min-width: 768px) {
+                  margin-bottom: 2.5rem;
+                }
               }
               dl {
                 display: flex;
                 flex-wrap: wrap;
                 dt {
-                  width: 25%;
+                  width: 60px;
                   display: flex;
                   align-items: center;  
                   &::before {
@@ -756,7 +771,7 @@ skill
                   }
                 }
                 dd {
-                  width: 75%;
+                  width: calc(100% - 60px);
                   padding-left: 1.6rem;
                 }
               }
@@ -764,13 +779,16 @@ skill
             .skill-right {
               @media screen and (min-width: 768px) {
                 width: 50%;
+                padding-top: 5%;
               }  
               .age-text {
                 width: 95%;
-                margin: 0 auto;
+                margin: 0 auto 1rem;
                 font-size: 1.4rem;
-                margin-bottom: 1rem;
                 padding: 1rem;
+                @media screen and (min-width: 768px) {
+                  margin: 0 auto 1rem 0;
+                }    
               }
               .age-private {
                 font-size: 1.4rem;

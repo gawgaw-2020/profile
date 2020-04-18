@@ -591,15 +591,25 @@ want
 }
 
 .want .want-wrap .section-inner .want-list li {
+  position: relative;
   width: 300px;
   height: 424px;
   margin: 0 auto 2.4rem;
   border-radius: 16px;
   -webkit-box-shadow: 2px 2px 6px rgba(0, 0, 0, 0.5);
           box-shadow: 2px 2px 6px rgba(0, 0, 0, 0.5);
+  -webkit-transition: all 0.5s cubic-bezier(0.68, -2, 0.45, 2);
+  transition: all 0.5s cubic-bezier(0.68, -2, 0.45, 2);
   background: #6088C6;
   background: linear-gradient(115deg, transparent 75%, rgba(255, 255, 255, 0.1) 75%) 0 0, linear-gradient(245deg, transparent 75%, rgba(255, 255, 255, 0.1) 75%) 0 0, linear-gradient(115deg, transparent 75%, rgba(255, 255, 255, 0.1) 75%) 7px -15px, linear-gradient(245deg, transparent 75%, rgba(255, 255, 255, 0.1) 75%) 7px -15px, #6088C6;
   background-size: 15px 30px;
+}
+
+.want .want-wrap .section-inner .want-list li:hover {
+  -webkit-transform: translateY(-15px);
+          transform: translateY(-15px);
+  -webkit-box-shadow: 2px 8px 12px rgba(0, 0, 0, 0.5);
+          box-shadow: 2px 8px 12px rgba(0, 0, 0, 0.5);
 }
 
 .want .want-wrap .section-inner .want-list li img {
@@ -831,7 +841,7 @@ skill
 
 .skill .skill-wrap .section-inner .history-wrap .history-list .history-item {
   border-left: 4px solid #fff;
-  padding: 0 0 4rem;
+  padding: 0 0 5rem;
 }
 
 @media screen and (min-width: 768px) {
@@ -839,6 +849,7 @@ skill
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
+    margin-left: 5%;
   }
 }
 
@@ -851,7 +862,7 @@ skill
 .skill .skill-wrap .section-inner .history-wrap .history-list .history-item .skill-left .age {
   font-size: 1.8rem;
   width: 30%;
-  color: rgba(235, 134, 134, 0.95);
+  color: #FC9D9D;
   margin-right: auto;
   margin-bottom: 1rem;
   display: -webkit-box;
@@ -872,15 +883,29 @@ skill
           flex-grow: 1;
 }
 
+@media screen and (min-width: 768px) {
+  .skill .skill-wrap .section-inner .history-wrap .history-list .history-item .skill-left .age {
+    margin-bottom: 2.5rem;
+  }
+}
+
 .skill .skill-wrap .section-inner .history-wrap .history-list .history-item .skill-left .age-title {
+  color: rgba(64, 114, 179, 0.95);
+  background-color: #EEF9FF;
   display: inline-block;
   margin: 0 2rem 1rem;
   padding: 0.5rem 1rem;
   font-size: 2rem;
   font-weight: bold;
-  border: 1px solid #fff;
-  border-left: 4px solid #fff;
-  border-right: 4px solid #fff;
+  border: 2px solid #AAD6EC;
+  border-left: 5px solid #AAD6EC;
+  border-right: 5px solid #AAD6EC;
+}
+
+@media screen and (min-width: 768px) {
+  .skill .skill-wrap .section-inner .history-wrap .history-list .history-item .skill-left .age-title {
+    margin-bottom: 2.5rem;
+  }
 }
 
 .skill .skill-wrap .section-inner .history-wrap .history-list .history-item .skill-left dl {
@@ -892,7 +917,7 @@ skill
 }
 
 .skill .skill-wrap .section-inner .history-wrap .history-list .history-item .skill-left dl dt {
-  width: 25%;
+  width: 60px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -911,22 +936,28 @@ skill
 }
 
 .skill .skill-wrap .section-inner .history-wrap .history-list .history-item .skill-left dl dd {
-  width: 75%;
+  width: calc(100% - 60px);
   padding-left: 1.6rem;
 }
 
 @media screen and (min-width: 768px) {
   .skill .skill-wrap .section-inner .history-wrap .history-list .history-item .skill-right {
     width: 50%;
+    padding-top: 5%;
   }
 }
 
 .skill .skill-wrap .section-inner .history-wrap .history-list .history-item .skill-right .age-text {
   width: 95%;
-  margin: 0 auto;
+  margin: 0 auto 1rem;
   font-size: 1.4rem;
-  margin-bottom: 1rem;
   padding: 1rem;
+}
+
+@media screen and (min-width: 768px) {
+  .skill .skill-wrap .section-inner .history-wrap .history-list .history-item .skill-right .age-text {
+    margin: 0 auto 1rem 0;
+  }
 }
 
 .skill .skill-wrap .section-inner .history-wrap .history-list .history-item .skill-right .age-private {

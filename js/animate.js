@@ -12,7 +12,7 @@ $(window).on('load scroll', function(){
     const windowsHeight = window.innerHeight;
 
     // Fired animation when the element on the bottom of the window
-    if(scrollPosition > elemOffset - (windowsHeight+77) ){
+    if(scrollPosition > elemOffset - (windowsHeight+22) ){
       $(this).addClass(isAnimate);
     }
   });
