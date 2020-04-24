@@ -35,6 +35,10 @@ img {
   display: inline-block;
 }
 
+.spacer {
+  height: 80px;
+}
+
 /*基本文字色を変更*/
 /*-------------------------------------------------------------------------------------------------
 
@@ -431,6 +435,7 @@ sub-view
 }
 
 .subView .subView-inner {
+  opacity: 0;
   position: relative;
   margin: 0 auto;
   height: 230px;
