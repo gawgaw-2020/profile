@@ -315,12 +315,13 @@ view-first
         font-size: 4rem;
       }
       p {
+        width: 300px;
         font-family: fot-tsukubrdgothic-std, sans-serif;
         font-style: normal;
         font-weight: bold;
         position: absolute;
-        top: -10px;
-        right: 100px;
+        top: -15px;
+        right: 5px;
       }
     }
     p {
@@ -873,6 +874,9 @@ footer {
             padding: 0.5rem 0;
             cursor: pointer;
             position: relative;
+            span {
+              font-size: 1.2rem;
+            }
             &::after {
               content: '+';
               font-size: 2.8rem;
@@ -1009,13 +1013,13 @@ footer {
   .p-grid__view-first .view-first-contents h2  {
     &:hover p {
       font-size: 1.6rem;
-      top: -8px;
-      right: -57px;
+      top: -2px;
+      right: -140px;
     }
     p {
       padding-bottom: 2rem;
-      top: 2px;
-      right: -47px;
+      top: -2px;
+      right: -132px;
       transform: rotate(25deg);
       transition: all 0.2s;
     }
