@@ -47,7 +47,7 @@ img {
 
 --------------------------------------------------------------------------------------------------*/
 .section-inner {
-  width: 95%;
+  width: 80%;
   max-width: 1440px;
   margin: 0 auto;
 }
@@ -635,9 +635,6 @@ works
   .works-wrap {
     padding: 9rem 0;
     .section-inner {
-      width: 95%;
-      max-width: 1440px;
-      position: relative;
       .section-title {
         @include sectionTitle(#fff);
         margin-bottom: 10rem;
@@ -645,41 +642,52 @@ works
           @include sectionTitleModule($pink);
         }
       }
-      .swiper-container.p-grid__list {
-        position: relative;
-        margin-bottom: 10rem;
+      .swiper-container-wrapper {
         max-width: 980px;
-        .swiper-wrapper {
-          .p-grid__list-item {
-            background-color: #eee;
-            padding: 1.4rem 1rem 5rem;
-            border-image: linear-gradient(90deg,#AEC4E5,$pink,#AEC4E5) 1/6px 0 6px;
-            border-style: solid;
-            a {
-              color: $textBlack;
-              p.card-pic {
-                margin-bottom: 1rem;
-                overflow: hidden;
-              }
-              h3 {
-                font-size: 2.2rem;
-                padding: 1rem;
-              }
-              .card-text {
-                text-align: left;
-                padding: 1.6rem;
-                font-size: 1.6rem;
+        margin: 0 auto;
+        position: relative;
+        .swiper-container.p-grid__list {
+          position: relative;
+          margin-bottom: 10rem;
+          max-width: 980px;
+          .swiper-wrapper {
+            .p-grid__list-item {
+              background-color: #eee;
+              padding: 1.4rem 1rem 5rem;
+              border-image: linear-gradient(90deg,#AEC4E5,$pink,#AEC4E5) 1/6px 0 6px;
+              border-style: solid;
+              a {
+                color: $textBlack;
+                p.card-pic {
+                  margin-bottom: 1rem;
+                  overflow: hidden;
+                }
+                h3 {
+                  font-size: 2.2rem;
+                  padding: 1rem;
+                }
+                .card-text {
+                  text-align: left;
+                  padding: 1.6rem;
+                  font-size: 1.6rem;
+                }
               }
             }
           }
-        }
-        .swiper-pagination {
-          margin-top: 15px;
-          position: static;
-          .swiper-pagination-bullet-active {
-            background-color: #EB8686;
+          .swiper-pagination {
+            margin-top: 15px;
+            position: static;
+            .swiper-pagination-bullet-active {
+              background-color: #EB8686;
 
+            }
           }
+        }
+        .swiper-button-next, .swiper-container-rtl .swiper-button-prev {
+          right: -28px;
+        }
+        .swiper-button-prev, .swiper-container-rtl .swiper-button-next {
+          left: -28px;
         }
         .swiper-button-prev,.swiper-button-next {
           top: 55%;

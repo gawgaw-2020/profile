@@ -46,7 +46,7 @@ img {
 
 --------------------------------------------------------------------------------------------------*/
 .section-inner {
-  width: 95%;
+  width: 80%;
   max-width: 1440px;
   margin: 0 auto;
 }
@@ -715,12 +715,6 @@ works
   padding: 9rem 0;
 }
 
-.works .works-wrap .section-inner {
-  width: 95%;
-  max-width: 1440px;
-  position: relative;
-}
-
 .works .works-wrap .section-inner .section-title {
   font-size: 2.4rem;
   color: #fff;
@@ -742,13 +736,19 @@ works
   border-radius: 1px;
 }
 
-.works .works-wrap .section-inner .swiper-container.p-grid__list {
+.works .works-wrap .section-inner .swiper-container-wrapper {
+  max-width: 980px;
+  margin: 0 auto;
+  position: relative;
+}
+
+.works .works-wrap .section-inner .swiper-container-wrapper .swiper-container.p-grid__list {
   position: relative;
   margin-bottom: 10rem;
   max-width: 980px;
 }
 
-.works .works-wrap .section-inner .swiper-container.p-grid__list .swiper-wrapper .p-grid__list-item {
+.works .works-wrap .section-inner .swiper-container-wrapper .swiper-container.p-grid__list .swiper-wrapper .p-grid__list-item {
   background-color: #eee;
   padding: 1.4rem 1rem 5rem;
   -o-border-image: linear-gradient(90deg, #AEC4E5, rgba(235, 134, 134, 0.95), #AEC4E5) 1/6px 0 6px;
@@ -757,36 +757,44 @@ works
   border-style: solid;
 }
 
-.works .works-wrap .section-inner .swiper-container.p-grid__list .swiper-wrapper .p-grid__list-item a {
+.works .works-wrap .section-inner .swiper-container-wrapper .swiper-container.p-grid__list .swiper-wrapper .p-grid__list-item a {
   color: #242424;
 }
 
-.works .works-wrap .section-inner .swiper-container.p-grid__list .swiper-wrapper .p-grid__list-item a p.card-pic {
+.works .works-wrap .section-inner .swiper-container-wrapper .swiper-container.p-grid__list .swiper-wrapper .p-grid__list-item a p.card-pic {
   margin-bottom: 1rem;
   overflow: hidden;
 }
 
-.works .works-wrap .section-inner .swiper-container.p-grid__list .swiper-wrapper .p-grid__list-item a h3 {
+.works .works-wrap .section-inner .swiper-container-wrapper .swiper-container.p-grid__list .swiper-wrapper .p-grid__list-item a h3 {
   font-size: 2.2rem;
   padding: 1rem;
 }
 
-.works .works-wrap .section-inner .swiper-container.p-grid__list .swiper-wrapper .p-grid__list-item a .card-text {
+.works .works-wrap .section-inner .swiper-container-wrapper .swiper-container.p-grid__list .swiper-wrapper .p-grid__list-item a .card-text {
   text-align: left;
   padding: 1.6rem;
   font-size: 1.6rem;
 }
 
-.works .works-wrap .section-inner .swiper-container.p-grid__list .swiper-pagination {
+.works .works-wrap .section-inner .swiper-container-wrapper .swiper-container.p-grid__list .swiper-pagination {
   margin-top: 15px;
   position: static;
 }
 
-.works .works-wrap .section-inner .swiper-container.p-grid__list .swiper-pagination .swiper-pagination-bullet-active {
+.works .works-wrap .section-inner .swiper-container-wrapper .swiper-container.p-grid__list .swiper-pagination .swiper-pagination-bullet-active {
   background-color: #EB8686;
 }
 
-.works .works-wrap .section-inner .swiper-container.p-grid__list .swiper-button-prev, .works .works-wrap .section-inner .swiper-container.p-grid__list .swiper-button-next {
+.works .works-wrap .section-inner .swiper-container-wrapper .swiper-button-next, .works .works-wrap .section-inner .swiper-container-wrapper .swiper-container-rtl .swiper-button-prev {
+  right: -28px;
+}
+
+.works .works-wrap .section-inner .swiper-container-wrapper .swiper-button-prev, .works .works-wrap .section-inner .swiper-container-wrapper .swiper-container-rtl .swiper-button-next {
+  left: -28px;
+}
+
+.works .works-wrap .section-inner .swiper-container-wrapper .swiper-button-prev, .works .works-wrap .section-inner .swiper-container-wrapper .swiper-button-next {
   top: 55%;
   color: #EB8686;
   font-size: 3.2rem;
