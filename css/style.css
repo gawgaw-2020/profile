@@ -777,6 +777,15 @@ works
   font-size: 1.6rem;
 }
 
+.works .works-wrap .section-inner .swiper-container.p-grid__list .swiper-pagination {
+  margin-top: 15px;
+  position: static;
+}
+
+.works .works-wrap .section-inner .swiper-container.p-grid__list .swiper-pagination .swiper-pagination-bullet-active {
+  background-color: #EB8686;
+}
+
 .works .works-wrap .section-inner .swiper-container.p-grid__list .swiper-button-prev, .works .works-wrap .section-inner .swiper-container.p-grid__list .swiper-button-next {
   top: 55%;
   color: #EB8686;

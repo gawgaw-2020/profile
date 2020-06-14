@@ -673,6 +673,14 @@ works
             }
           }
         }
+        .swiper-pagination {
+          margin-top: 15px;
+          position: static;
+          .swiper-pagination-bullet-active {
+            background-color: #EB8686;
+
+          }
+        }
         .swiper-button-prev,.swiper-button-next {
           top: 55%;
           color: #EB8686;
