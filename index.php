@@ -52,56 +52,56 @@ define("title", "東京のWebサービス開発・Webサイト制作者｜がう
           <h2 class="section-title">これから学びたいこと</h2>
           <ul class="want-list">
             <li>
-              <h3 class="card-title"><span>1</span>コーディング</h3>
+              <h3 class="card-title"><span>1</span>Lorem, ipsum.</h3>
               <img src="img/want-coding.jpeg" alt="">
               <div class="text-wrap">
                 <p class="card-text">
-                  こちらのポートフォリオサイトを作成してから、Webサイト製作のお仕事を継続して任せていただける事になりました。今後も引き続き、しっかりと基礎的なマークアップを身に付けたいです。
+                  Lorem ipsum dolor sit amet consectetur, adipisicing elit. Consectetur dolor soluta fuga vel quae. Iste facilis adipisci quaerat cupiditate aspernatur!
                 </p>
               </div>
             </li>
             <li>
-              <h3 class="card-title"><span>2</span>撮影技術</h3>
+              <h3 class="card-title"><span>2</span>Lorem, ipsum.</h3>
               <img src="img/want-pic.jpg" alt="">
               <div class="text-wrap">
                 <p class="card-text">
-                  特技とはいえないのですが、PCやカメラなどのガジェットが好きなので、撮影や動画製作も休みの時は気分転換に触るようにしています。少しでも新しい仕事に活かせればいいなと思っています。
+                Lorem ipsum dolor sit amet consectetur, adipisicing elit. Consectetur dolor soluta fuga vel quae. Iste facilis adipisci quaerat cupiditate aspernatur!
                 </p>
               </div>
             </li>
             <li>
-              <h3 class="card-title"><span>3</span>デザイン</h3>
+              <h3 class="card-title"><span>3</span>Lorem, ipsum.</h3>
               <img src="img/want-design.jpg" alt="">
               <div class="text-wrap">
                 <p class="card-text">
-                  次回の製作物に向けて、AdobeのPhotoshopとXDを学んでいます。コーディングまで意識したデザインが難しいですが、夢中になれる部分でもあります。絵を書いたりするのは正直苦手です。
+                Lorem ipsum dolor sit amet consectetur, adipisicing elit. Consectetur dolor soluta fuga vel quae. Iste facilis adipisci quaerat cupiditate aspernatur!
                 </p>
               </div>
             </li>
             <li>
-              <h3 class="card-title"><span>4</span>プログラミング</h3>
+              <h3 class="card-title"><span>4</span>Lorem, ipsum.</h3>
               <img src="img/want-dev.jpg" alt="">
               <div class="text-wrap">
                 <p class="card-text">
-                  将来的に、フロントエンドを中心に技術を身に付けていきたいと思っています。今年の夏はまずPHPの基礎学習ですが、秋からJavaScriptの学習を集中的にやっていく予定です。
+                Lorem ipsum dolor sit amet consectetur, adipisicing elit. Consectetur dolor soluta fuga vel quae. Iste facilis adipisci quaerat cupiditate aspernatur!
                 </p>
               </div>
             </li>
             <li>
-              <h3 class="card-title"><span>5</span>チーム開発</h3>
+              <h3 class="card-title"><span>5</span>Lorem, ipsum.</h3>
               <img src="img/want-team.jpg" alt="">
               <div class="text-wrap">
                 <p class="card-text">
-                  秋には退職してスクールに通う事もあり、今後は積極的にチームでの開発も経験したいです。技術に目移りしたり、作りたいサービスが多いので中途半端にならない様に注意しています。
+                Lorem ipsum dolor sit amet consectetur, adipisicing elit. Consectetur dolor soluta fuga vel quae. Iste facilis adipisci quaerat cupiditate aspernatur!
                 </p>
               </div>
             </li>
             <li>
-              <h3 class="card-title"><span>6</span>　　事業としてのWeb技術</h3>
+              <h3 class="card-title"><span>6</span>Lorem, ipsum.</h3>
               <img src="img/want-business.jpg" alt="">
               <div class="text-wrap">
                 <p class="card-text">
-                  何か作ったり、技術を身に付けるのは好きで楽しいのですが、それよりもワクワクするのが自分やお客さんの「課題解決」「改善」です。ビジネス的な視点でWeb技術を扱える人間になりたいです。
+                Lorem ipsum dolor sit amet consectetur, adipisicing elit. Consectetur dolor soluta fuga vel quae. Iste facilis adipisci quaerat cupiditate aspernatur!
                 </p>
               </div>
             </li>

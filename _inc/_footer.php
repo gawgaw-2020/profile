@@ -2,8 +2,8 @@
     <div class="main-inner">
       <div class="footer-items pc-only">
         <a href="/">
-          <p class="footer-icon"><img src="img/takuya.png" alt=""></p>
-          <p class="footer-logo"><img src="img/find-tips.png" alt=""></p>
+          <p class="footer-icon"><img src="/img/takuya.png" alt=""></p>
+          <p class="footer-logo"><img src="/img/find-tips.png" alt=""></p>
         </a>
       </div>
       <ul class="footer-list">
