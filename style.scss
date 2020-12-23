@@ -53,9 +53,9 @@ img {
 }
 $textBlack: #242424;
 
-$baseBlue: rgba(64, 114, 179, 0.95);
+$baseBlue: rgba(64, 114, 179, 0.8);
 
-$pink: rgba(235, 134, 134, 0.95);
+$pink: rgba(235, 134, 134, 0.7);
 
 @mixin sectionTitle($titleColor) {
   font-size: 2.4rem;
@@ -99,13 +99,13 @@ $pink: rgba(235, 134, 134, 0.95);
   position: relative;
 }
 
-@mixin btnColor($btnBgColor:#4072B3, $borderColor:#fff, $btnColor:#fff) {
+@mixin btnColor($btnBgColor:$baseBlue, $borderColor:#fff, $btnColor:#fff) {
   background: $btnBgColor;
   border: 1px solid $borderColor;
   color: $btnColor;
 }
 
-@mixin btnHover($hoverColor:#4072B3, $hoverBgColor:#fff, $hoverBoderColor:#4072B3) {
+@mixin btnHover($hoverColor:$baseBlue, $hoverBgColor:#fff, $hoverBoderColor:#4072B3) {
   opacity: 0.8;
   color: $hoverColor;
   background-color: $hoverBgColor;

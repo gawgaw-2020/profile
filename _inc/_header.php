@@ -37,7 +37,7 @@
           <!-- <li><a href="#" target="_self"><i class="fas fa-laptop-code"></i>Works<span>-制作実績-</span></a></li> -->
           <li><a href="/contact/" target="_self"><i class="fas fa-envelope-open-text"></i>Contact<span>-お問い合わせ-</span></a></li>
           <li><a href="https://twitter.com/gawgaw_2020"  target="_blank" rel="noopener noreferrer"><i class="fab fa-twitter"></i>Twitter<span>-日々発信中-</span></a></li>
-          <li><a href="https://github.com/gawgaw-2020"  target="_blank" rel="noopener noreferrer"><i class="fab fa-github"></i>github<span>-日々発信中-</span></a></li>
+          <li><a href="https://github.com/gawgaw-2020"  target="_blank" rel="noopener noreferrer"><i class="fab fa-github"></i>github<span>-草活-</span></a></li>
         </ul>
       </nav>
     </div>

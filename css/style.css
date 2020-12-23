@@ -79,8 +79,8 @@ header
   background-color: #fff;
   -webkit-transition: all 0.3s;
   transition: all 0.3s;
-  -webkit-box-shadow: 1px 1px 3px rgba(64, 114, 179, 0.95);
-          box-shadow: 1px 1px 3px rgba(64, 114, 179, 0.95);
+  -webkit-box-shadow: 1px 1px 3px rgba(64, 114, 179, 0.8);
+          box-shadow: 1px 1px 3px rgba(64, 114, 179, 0.8);
 }
 
 .l-header .l-header-inner .ham span:first-child {
@@ -157,7 +157,7 @@ header
 
 .l-header .l-header-inner nav.l-header__nav-top .balloon .chatting .says {
   border-radius: 1.2rem;
-  background: rgba(235, 134, 134, 0.95);
+  background: rgba(235, 134, 134, 0.7);
   position: relative;
 }
 
@@ -168,7 +168,7 @@ header
   top: 50%;
   left: -24px;
   border: 12px solid transparent;
-  border-right: 12px solid rgba(235, 134, 134, 0.95);
+  border-right: 12px solid rgba(235, 134, 134, 0.7);
 }
 
 .l-header .l-header-inner nav.l-header__nav-top .balloon .chatting .says p {
@@ -382,14 +382,14 @@ view-first
 }
 
 .btn-about {
-  background: #4072B3;
+  background: rgba(64, 114, 179, 0.8);
   border: 1px solid #fff;
   color: #fff;
 }
 
 .btn-about:hover {
   opacity: 0.8;
-  color: #4072B3;
+  color: rgba(64, 114, 179, 0.8);
   background-color: #fff;
   border: 2px solid #4072B3;
   -webkit-box-shadow: 0 4px 4px rgba(0, 0, 0, 0.25);
@@ -397,16 +397,16 @@ view-first
 }
 
 .btn-works {
-  background: rgba(235, 134, 134, 0.95);
+  background: rgba(235, 134, 134, 0.7);
   border: 1px solid #fff;
   color: #fff;
 }
 
 .btn-works:hover {
   opacity: 0.8;
-  color: rgba(235, 134, 134, 0.95);
+  color: rgba(235, 134, 134, 0.7);
   background-color: #fff;
-  border: 2px solid rgba(235, 134, 134, 0.95);
+  border: 2px solid rgba(235, 134, 134, 0.7);
   -webkit-box-shadow: 0 4px 4px rgba(0, 0, 0, 0.25);
           box-shadow: 0 4px 4px rgba(0, 0, 0, 0.25);
 }
@@ -476,7 +476,7 @@ sub-view
   left: 50%;
   -webkit-transform: translateY(-30%) translateX(-53%);
           transform: translateY(-30%) translateX(-53%);
-  background-color: rgba(64, 114, 179, 0.95);
+  background-color: rgba(64, 114, 179, 0.8);
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -517,7 +517,7 @@ about
 -------------------------------------------------------------------------------------------------*/
 .about {
   color: #fff;
-  background-color: rgba(64, 114, 179, 0.95);
+  background-color: rgba(64, 114, 179, 0.8);
 }
 
 .about .about-wrap {
@@ -542,7 +542,7 @@ about
   left: 50%;
   -webkit-transform: translateX(-50%);
   transform: translateX(-50%);
-  background-color: rgba(235, 134, 134, 0.95);
+  background-color: rgba(235, 134, 134, 0.7);
   border-radius: 1px;
   content: none;
 }
@@ -585,7 +585,7 @@ want
   left: 50%;
   -webkit-transform: translateX(-50%);
   transform: translateX(-50%);
-  background-color: rgba(235, 134, 134, 0.95);
+  background-color: rgba(235, 134, 134, 0.7);
   border-radius: 1px;
 }
 
@@ -634,13 +634,13 @@ want
   left: -12px;
   border-top: 40px solid transparent;
   border-bottom: 40px solid transparent;
-  border-left: 69.282px solid rgba(235, 134, 134, 0.95);
+  border-left: 69.282px solid rgba(235, 134, 134, 0.7);
   -webkit-filter: drop-shadow(2px 2px 2px rgba(0, 0, 0, 0.5));
           filter: drop-shadow(2px 2px 2px rgba(0, 0, 0, 0.5));
 }
 
 .want .want-wrap .section-inner .want-list li:nth-of-type(even) {
-  background-color: rgba(235, 134, 134, 0.95);
+  background-color: rgba(235, 134, 134, 0.7);
 }
 
 .want .want-wrap .section-inner .want-list li:nth-of-type(even) .card-title:before {
@@ -661,7 +661,7 @@ want
 }
 
 .want .want-wrap .section-inner .want-list li .text-wrap .card-text a {
-  color: rgba(64, 114, 179, 0.95);
+  color: rgba(64, 114, 179, 0.8);
   text-decoration: underline;
   -webkit-transition: 0.3s;
   transition: 0.3s;
@@ -699,7 +699,7 @@ works
 .works {
   text-align: center;
   color: #fff;
-  background-color: rgba(64, 114, 179, 0.95);
+  background-color: rgba(64, 114, 179, 0.8);
 }
 
 .works .works-wrap {
@@ -723,7 +723,7 @@ works
   left: 50%;
   -webkit-transform: translateX(-50%);
   transform: translateX(-50%);
-  background-color: rgba(235, 134, 134, 0.95);
+  background-color: rgba(235, 134, 134, 0.7);
   border-radius: 1px;
 }
 
@@ -742,9 +742,9 @@ works
 .works .works-wrap .section-inner .swiper-container-wrapper .swiper-container.p-grid__list .swiper-wrapper .p-grid__list-item {
   background-color: #eee;
   padding: 1.4rem 1rem 5rem;
-  -o-border-image: linear-gradient(90deg, #AEC4E5, rgba(235, 134, 134, 0.95), #AEC4E5) 1/6px 0 6px;
-     border-image: -webkit-gradient(linear, left top, right top, from(#AEC4E5), color-stop(rgba(235, 134, 134, 0.95)), to(#AEC4E5)) 1/6px 0 6px;
-     border-image: linear-gradient(90deg, #AEC4E5, rgba(235, 134, 134, 0.95), #AEC4E5) 1/6px 0 6px;
+  -o-border-image: linear-gradient(90deg, #AEC4E5, rgba(235, 134, 134, 0.7), #AEC4E5) 1/6px 0 6px;
+     border-image: -webkit-gradient(linear, left top, right top, from(#AEC4E5), color-stop(rgba(235, 134, 134, 0.7)), to(#AEC4E5)) 1/6px 0 6px;
+     border-image: linear-gradient(90deg, #AEC4E5, rgba(235, 134, 134, 0.7), #AEC4E5) 1/6px 0 6px;
   border-style: solid;
 }
 
@@ -794,16 +794,16 @@ works
 
 .works .works-wrap .section-inner .btn-works {
   font-size: 1.8em;
-  background: rgba(235, 134, 134, 0.95);
+  background: rgba(235, 134, 134, 0.7);
   border: 1px solid #fff;
   color: #fff;
 }
 
 .works .works-wrap .section-inner .btn-works:hover {
   opacity: 0.8;
-  color: rgba(235, 134, 134, 0.95);
+  color: rgba(235, 134, 134, 0.7);
   background-color: #fff;
-  border: 2px solid rgba(235, 134, 134, 0.95);
+  border: 2px solid rgba(235, 134, 134, 0.7);
   -webkit-box-shadow: 0 4px 4px rgba(0, 0, 0, 0.25);
           box-shadow: 0 4px 4px rgba(0, 0, 0, 0.25);
 }
@@ -815,7 +815,7 @@ skill
 -------------------------------------------------------------------------------------------------*/
 .skill {
   color: #fff;
-  background-color: rgba(64, 114, 179, 0.95);
+  background-color: rgba(64, 114, 179, 0.8);
 }
 
 .skill .skill-wrap {
@@ -840,7 +840,7 @@ skill
   left: 50%;
   -webkit-transform: translateX(-50%);
   transform: translateX(-50%);
-  background-color: rgba(235, 134, 134, 0.95);
+  background-color: rgba(235, 134, 134, 0.7);
   border-radius: 1px;
 }
 
@@ -903,7 +903,7 @@ skill
 }
 
 .skill .skill-wrap .section-inner .history-wrap .history-list .history-item .skill-left .age-title {
-  color: rgba(64, 114, 179, 0.95);
+  color: rgba(64, 114, 179, 0.8);
   background-color: #EEF9FF;
   display: inline-block;
   margin: 0 2rem 1rem;
@@ -1023,16 +1023,16 @@ contact
 
 .contact .contact-wrap .section-inner .btn-contact {
   font-size: 1.8em;
-  background: rgba(235, 134, 134, 0.95);
+  background: rgba(235, 134, 134, 0.7);
   border: 1px solid #fff;
   color: #fff;
 }
 
 .contact .contact-wrap .section-inner .btn-contact:hover {
   opacity: 0.8;
-  color: rgba(235, 134, 134, 0.95);
+  color: rgba(235, 134, 134, 0.7);
   background-color: #fff;
-  border: 2px solid rgba(235, 134, 134, 0.95);
+  border: 2px solid rgba(235, 134, 134, 0.7);
   -webkit-box-shadow: 0 4px 4px rgba(0, 0, 0, 0.25);
           box-shadow: 0 4px 4px rgba(0, 0, 0, 0.25);
 }
@@ -1044,7 +1044,7 @@ footer
 -------------------------------------------------------------------------------------------------*/
 footer {
   padding: 4rem 0;
-  background-color: rgba(64, 114, 179, 0.95);
+  background-color: rgba(64, 114, 179, 0.8);
   color: #fff;
   font-size: 1.6rem;
 }
@@ -1249,7 +1249,7 @@ footer .copyright {
     left: 50%;
     -webkit-transform: translateX(-50%);
     transform: translateX(-50%);
-    background-color: rgba(235, 134, 134, 0.95);
+    background-color: rgba(235, 134, 134, 0.7);
     border-radius: 1px;
   }
   .contact .contact-wrap .section-inner p {
@@ -1262,15 +1262,15 @@ footer .copyright {
   }
   .contact .contact-wrap .section-inner .btn-contact {
     font-size: 1.8em;
-    background: rgba(235, 134, 134, 0.95);
+    background: rgba(235, 134, 134, 0.7);
     border: 1px solid #fff;
     color: #fff;
   }
   .contact .contact-wrap .section-inner .btn-contact:hover {
     opacity: 0.8;
-    color: rgba(235, 134, 134, 0.95);
+    color: rgba(235, 134, 134, 0.7);
     background-color: #fff;
-    border: 2px solid rgba(235, 134, 134, 0.95);
+    border: 2px solid rgba(235, 134, 134, 0.7);
     -webkit-box-shadow: 0 4px 4px rgba(0, 0, 0, 0.25);
             box-shadow: 0 4px 4px rgba(0, 0, 0, 0.25);
   }
@@ -1310,7 +1310,7 @@ footer .copyright {
     transition: all 0.2s;
   }
   footer .main-inner ul.footer-list li.footer-contents ul.content-list a:hover {
-    color: rgba(235, 134, 134, 0.95);
+    color: rgba(235, 134, 134, 0.7);
   }
   footer .copyright {
     text-align: center;
