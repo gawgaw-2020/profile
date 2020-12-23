@@ -1,6 +1,6 @@
 <?php
 
-define("title", "【CONTACT】東京のWebサイト制作・Webサービス開発者｜タクヤ/TAKUYA");
+define("title", "【CONTACT】東京のWebサービス開発・Webサイト制作者｜タクヤ/TAKUYA");
 
 ?>
   <?php include(dirname(__FILE__).'/../_inc/_head.php'); ?>
