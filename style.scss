@@ -501,7 +501,7 @@ about
   background-color: $baseBlue;
   .about-wrap {
     text-align: center;
-    padding: 9rem 0;
+    padding: 9rem 0 2rem;
     .section-inner {
       .section-title {
         @include sectionTitle(#fff);
@@ -529,7 +529,7 @@ want
 
 .want {
   .want-wrap {
-    padding: 9rem 0;
+    padding: 9rem 0 0;
     .section-inner {
       max-width: 1080px;
       .section-title {

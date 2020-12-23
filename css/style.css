@@ -522,7 +522,7 @@ about
 
 .about .about-wrap {
   text-align: center;
-  padding: 9rem 0;
+  padding: 9rem 0 2rem;
 }
 
 .about .about-wrap .section-inner .section-title {
@@ -560,7 +560,7 @@ want
 
 -------------------------------------------------------------------------------------------------*/
 .want .want-wrap {
-  padding: 9rem 0;
+  padding: 9rem 0 0;
 }
 
 .want .want-wrap .section-inner {

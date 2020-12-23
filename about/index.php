@@ -23,7 +23,7 @@ define("title", "【ABOUT】東京のWebサービス開発・Webサイト制作�
         <div class="section-inner">
           <h2 class="section-title"><span class="text">簡単な自己紹介</span><span class="text"></span> </h2>
           <p>
-            はじめまして！ TAKUYAです。
+            はじめまして！ がうがうです。
             <sapn class="text">世界に影響を与えるGEEKになるため、</sapn>
           </p>
           <p>
