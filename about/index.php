@@ -42,53 +42,7 @@
 
 </head>
 <body>
-  <header class="l-header">
-    <div class="l-header-inner">
-      <h1 class="l-product-logo-pc tab-only">
-        <a href="../index.html" target="_self">
-          <p class="face-logo"><img alt="小川拓也のロゴ" src="../img/takuya.png" /></p>
-          <p class="logo pc-only"><img src="../img/find-tips.png" alt="サイト名Find tips"></p>
-        </a>
-      </h1>
-      <!-- Navigation toggle button for Smartphone-->
-      <div class="ham" id="ham">
-        <span></span>
-        <span></span>
-        <span></span>
-      </div>
-      <nav id="menu" class="l-header__nav-top">
-        <div class="balloon">
-          <div class="faceicon">
-            <h1  class="l-product-logo-sp">
-              <a href="../index.html" target="_self">
-                <img alt="小川拓也のロゴ" src="../img/takuya.png" />
-              </a>
-            </h1>
-          </div>
-          <div class="chatting">
-            <div class="says">
-              <p>Hello World!!
-                <br>
-                新型コロナ対策のため、不要不急の外出及び「三つの密」を避けましょう！
-                <br>
-                感染防止のためには、できる限り頻繁に石けんを使って手洗い！
-              </p>
-            </div>
-          </div>
-        </div>
-        <ul class="gb-menu">
-          <li><a href="index.html" target="_self"><i class="fas fa-user-circle"></i>About<span>-自己紹介-</span></a></li>
-          <!-- <li><a href="#" target="_self"><i class="fas fa-laptop-code"></i>Works<span>-制作実績-</span></a></li> -->
-          <!-- <li><a href="https://hiroteku.com/hiroteku/" target="_self"><i class="fas fa-book-open"></i>Blog<span>-技術ブログ-</span></a></li> -->
-          <li><a href="../contact/index.html" target="_self"><i class="fas fa-envelope-open-text"></i>Contact<span>-お問い合わせ-</span></a></li>
-          <li><a href="https://twitter.com/_TAKUYA_jp"  target="_blank" rel="noopener noreferrer"><i class="fab fa-twitter"></i>Twitter<span>-日々発信中-</span></a></li>
-          <li><a href="https://www.wantedly.com/users/134766669
-
-            "  target="_blank" rel="noopener noreferrer"><img src="../img/wantedly_mark.png" alt="">Wantedly<span>-2021年3月転職活動開始-</span></a></li>
-        </ul>
-      </nav>
-    </div>
-  </header>
+  <?php include(dirname(__FILE__).'/../_inc/_header.php'); ?>
   <main>
     <section class="subView overlay">
       <div class="subView-inner animated" data-animate="fadeInLeft">
