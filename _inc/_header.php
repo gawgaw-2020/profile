@@ -2,7 +2,7 @@
     <div class="l-header-inner">
       <h1 class="l-product-logo-pc tab-only">
         <a href="/" target="_self">
-          <p class="face-logo"><img alt="小川拓也のロゴ" src="../img/takuya.png" /></p>
+          <p class="face-logo"><img alt="がうがうさんのロゴ" src="../img/takuya.png" /></p>
           <p class="logo pc-only"><img src="../img/find-tips.png" alt="サイト名Find tips"></p>
         </a>
       </h1>
@@ -17,7 +17,7 @@
           <div class="faceicon">
             <h1  class="l-product-logo-sp">
               <a href="/" target="_self">
-                <img alt="小川拓也のロゴ" src="../img/takuya.png" />
+                <img alt="がうがうさんのロゴ" src="../img/takuya.png" />
               </a>
             </h1>
           </div>
