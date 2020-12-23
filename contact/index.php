@@ -13,8 +13,8 @@ define("title", "【CONTACT】東京のWebサイト制作・Webサービス開�
         <h1>Contact</h1>
       </div>
       <ul class="subView-breadCrumbs">
-        <li><a href="../index.php" target="_self">HOME</a><span>＞</span></li>
-        <li><a href="index.php" target="_self">CONTACT</a><span></span></li>
+        <li><a href="/" target="_self">HOME</a><span>＞</span></li>
+        <li><a href="/contact/" target="_self">CONTACT</a><span></span></li>
       </ul>
     </div>
   </section>

@@ -13,8 +13,8 @@ define("title", "【ABOUT】東京のWebサービス開発・Webサイト制作�
           <h1>About</h1>
         </div>
         <ul class="subView-breadCrumbs">
-          <li><a href="../index.php" target="_self">HOME</a><span>＞</span></li>
-          <li><a href="index.php" target="_self">ABOUT</a><span></span></li>
+          <li><a href="/" target="_self">HOME</a><span>＞</span></li>
+          <li><a href="/about/" target="_self">ABOUT</a><span></span></li>
         </ul>
       </div>
     </section>
