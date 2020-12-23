@@ -394,7 +394,6 @@ view-first
   border: 2px solid #4072B3;
   -webkit-box-shadow: 0 4px 4px rgba(0, 0, 0, 0.25);
           box-shadow: 0 4px 4px rgba(0, 0, 0, 0.25);
-  top: -2px;
 }
 
 .btn-works {
@@ -410,7 +409,6 @@ view-first
   border: 2px solid rgba(235, 134, 134, 0.95);
   -webkit-box-shadow: 0 4px 4px rgba(0, 0, 0, 0.25);
           box-shadow: 0 4px 4px rgba(0, 0, 0, 0.25);
-  top: -2px;
 }
 
 /*-------------------------------------------------------------------------------------------------
@@ -611,13 +609,6 @@ want
   background-size: 15px 30px;
 }
 
-.want .want-wrap .section-inner .want-list li:hover {
-  -webkit-transform: translateY(-15px);
-          transform: translateY(-15px);
-  -webkit-box-shadow: 2px 8px 12px rgba(0, 0, 0, 0.5);
-          box-shadow: 2px 8px 12px rgba(0, 0, 0, 0.5);
-}
-
 .want .want-wrap .section-inner .want-list li img {
   height: 168px;
 }
@@ -815,7 +806,6 @@ works
   border: 2px solid rgba(235, 134, 134, 0.95);
   -webkit-box-shadow: 0 4px 4px rgba(0, 0, 0, 0.25);
           box-shadow: 0 4px 4px rgba(0, 0, 0, 0.25);
-  top: -2px;
 }
 
 /*-------------------------------------------------------------------------------------------------
@@ -1045,7 +1035,6 @@ contact
   border: 2px solid rgba(235, 134, 134, 0.95);
   -webkit-box-shadow: 0 4px 4px rgba(0, 0, 0, 0.25);
           box-shadow: 0 4px 4px rgba(0, 0, 0, 0.25);
-  top: -2px;
 }
 
 /*-------------------------------------------------------------------------------------------------
@@ -1284,7 +1273,6 @@ footer .copyright {
     border: 2px solid rgba(235, 134, 134, 0.95);
     -webkit-box-shadow: 0 4px 4px rgba(0, 0, 0, 0.25);
             box-shadow: 0 4px 4px rgba(0, 0, 0, 0.25);
-    top: -2px;
   }
   /* -------------------------------------------- */
   /* 768px〜 フッター用デザイン */
@@ -1378,4 +1366,3 @@ footer .copyright {
     font-size: 1.5rem;
   }
 }
-/*# sourceMappingURL=style.css.map */
